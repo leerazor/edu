@@ -1,0 +1,47 @@
+[
+  {
+    "id": "IMG-01",
+    "file": "assets/references/nersc-server-racks-cc0.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Front_of_server_racks_at_NERSC.jpg",
+    "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Front_of_server_racks_at_NERSC.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Derrick Coetzee",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "description": "NERSC server racks, 2011",
+    "checked_date": "2026-10-09",
+    "original_unmodified": true,
+    "purpose": "범용 시각 참고 전용. 우리 팀 또는 화성 HPC센터의 실제 사진 아님.",
+    "bytes": 1126883,
+    "sha256": "5555cef940402c6e2f7e61236af44c620acb7a906febdf67a613ad178b33ed0e"
+  },
+  {
+    "id": "IMG-02",
+    "file": "assets/references/server-air-cooling-cc0.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:1U_rack_mount_server_cooling_system_fan_heat-sink.jpg",
+    "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/1U_rack_mount_server_cooling_system_fan_heat-sink.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Tobias Maier",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "description": "1U server air cooling, 2011",
+    "checked_date": "2026-10-09",
+    "original_unmodified": true,
+    "purpose": "범용 시각 참고 전용. 우리 팀 또는 화성 HPC센터의 실제 사진 아님.",
+    "bytes": 430557,
+    "sha256": "3933026eed5cd7d14c27f611897c34df94ced7a6fd4d34ea36c247fdb4127c7c"
+  },
+  {
+    "id": "IMG-03",
+    "file": "assets/references/cpu-liquid-cooling-cc-by-sa-4.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:CPU_liquid_cooling_example.jpg",
+    "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/CPU_liquid_cooling_example.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Votpuske",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "description": "CPU liquid cooling setup by Malico, 2025",
+    "checked_date": "2026-10-09",
+    "original_unmodified": true,
+    "purpose": "범용 시각 참고 전용. 우리 팀 또는 화성 HPC센터의 실제 사진 아님.",
+    "bytes": 1458182,
+    "sha256": "16e9e8eb36423993e2928ddd86b06c0c4ec44e1df4dcf78af74123f6a787d736"
+  }
+]
