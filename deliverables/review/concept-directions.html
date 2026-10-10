@@ -1,0 +1,136 @@
+<style>
+  #lf-concept-directions { width:100%; }
+  #lf-concept-directions .lf-stage { padding:0; }
+  #lf-concept-directions .lf-film {
+    --lf-paper:light-dark(#f6f3eb,#152523);
+    --lf-ink:light-dark(#19362f,#f4f1e6);
+    --lf-panel:light-dark(#fffdf7,#273d38);
+    --lf-line:light-dark(#c7cec3,#697a70);
+    color:var(--lf-ink); background:var(--lf-paper);
+    font-family:"Malgun Gothic","Noto Sans KR",sans-serif;
+    box-sizing:border-box; min-height:460px; padding:26px 30px 22px;
+    display:flex; flex-direction:column; gap:22px; overflow:hidden;
+  }
+  #lf-concept-directions .lf-kicker { display:flex; flex-wrap:wrap; gap:8px 18px; font-size:11px; font-weight:500; letter-spacing:.1em; line-height:1.5; }
+  #lf-concept-directions .lf-kicker span:last-child { margin-left:auto; }
+  #lf-concept-directions .lf-headline { font-size:34px; font-weight:500; line-height:1.35; letter-spacing:-.04em; margin:0; }
+  #lf-concept-directions .lf-subtitle { font-size:13px; line-height:1.5; margin:0; }
+  #lf-concept-directions .lf-bottom { display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px 16px; font-size:11px; line-height:1.5; border-top:1px solid var(--lf-line); padding-top:12px; margin-top:auto; }
+  #lf-concept-directions .lf-action { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-top:12px; min-height:78px; }
+  #lf-concept-directions .lf-window-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  #lf-concept-directions .lf-window { background:var(--lf-panel); min-height:128px; position:relative; padding:18px; box-sizing:border-box; border:1px solid var(--lf-line); }
+  #lf-concept-directions .lf-window-title { display:block; font-size:22px; font-weight:500; line-height:1.4; }
+  #lf-concept-directions .lf-window-detail { display:block; font-size:12px; line-height:1.6; margin-top:14px; }
+  #lf-concept-directions .lf-shutter { position:absolute; inset:0; background:var(--lf-green); color:#19362f; display:flex; align-items:center; padding:18px; font-size:22px; line-height:1.4; clip-path:inset(0 0 0 0); transition:clip-path .65s ease; }
+  #lf-concept-directions .lf-open.is-open .lf-shutter { clip-path:inset(0 0 0 100%); }
+  #lf-concept-directions .lf-open { --lf-green:#cce58b; }
+  #lf-concept-directions .lf-coop { --lf-paper:light-dark(#eaf0f2,#13222d); --lf-ink:light-dark(#17333f,#e8f3f2); --lf-panel:light-dark(#f9ffff,#223746); --lf-line:light-dark(#9bafb5,#5d7680); --lf-mint:#8ee0ce; }
+  #lf-concept-directions .lf-coop .lf-headline { letter-spacing:-.02em; }
+  #lf-concept-directions .lf-lanes { display:grid; grid-template-columns:1fr 1fr; gap:28px; transition:gap .55s ease; }
+  #lf-concept-directions .lf-lane { padding:17px; background:var(--lf-panel); border-top:4px solid var(--lf-mint); min-height:116px; box-sizing:border-box; }
+  #lf-concept-directions .lf-lane:last-child { border-top-color:light-dark(#b05e49,#edb09a); }
+  #lf-concept-directions .lf-lane-tag { display:block; font-size:11px; line-height:1.4; letter-spacing:.1em; margin-bottom:12px; }
+  #lf-concept-directions .lf-lane strong { font-size:22px; line-height:1.5; font-weight:500; }
+  #lf-concept-directions .lf-join { background:var(--lf-mint); color:#153a36; font-size:15px; font-weight:500; padding:10px; text-align:center; transform:scaleX(.8); transition:transform .55s ease; }
+  #lf-concept-directions .lf-coop.is-open .lf-lanes { gap:4px; }
+  #lf-concept-directions .lf-coop.is-open .lf-join { transform:scaleX(1); }
+  #lf-concept-directions .lf-archive { --lf-paper:light-dark(#f3eee1,#2b2a24); --lf-ink:light-dark(#32352b,#eee8d6); --lf-panel:light-dark(#fffdf6,#403f34); --lf-line:light-dark(#b8b8a6,#73715e); --lf-note:#e0b884; }
+  #lf-concept-directions .lf-archive .lf-headline { font-family:"Batang","Noto Serif KR",serif; }
+  #lf-concept-directions .lf-records { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; padding:8px 4px; }
+  #lf-concept-directions .lf-record { position:relative; box-sizing:border-box; padding:15px 12px; min-height:145px; background:var(--lf-panel); border:1px solid var(--lf-line); transform:translateY(8px) rotate(-3deg); transition:transform .55s ease; }
+  #lf-concept-directions .lf-record:nth-child(2) { transform:translateY(0) rotate(2deg); }
+  #lf-concept-directions .lf-record:nth-child(3) { transform:translateY(10px) rotate(-2deg); }
+  #lf-concept-directions .lf-record span { display:block; font-size:11px; line-height:1.5; margin-bottom:18px; }
+  #lf-concept-directions .lf-record strong { display:block; font-size:18px; line-height:1.5; font-weight:500; }
+  #lf-concept-directions .lf-record:before { content:""; position:absolute; top:-4px; left:12px; width:32px; height:7px; background:var(--lf-note); }
+  #lf-concept-directions .lf-archive.is-open .lf-record { transform:translateY(0) rotate(0); }
+  @media(max-width:480px) {
+    #lf-concept-directions .lf-film { min-height:480px; padding:20px 16px; gap:20px; }
+    #lf-concept-directions .lf-headline { font-size:26px; }
+    #lf-concept-directions .lf-kicker { letter-spacing:.03em; }
+    #lf-concept-directions .lf-kicker span:last-child { margin-left:0; }
+    #lf-concept-directions .lf-window { padding:12px; min-height:145px; }
+    #lf-concept-directions .lf-window-title, #lf-concept-directions .lf-shutter { font-size:19px; }
+    #lf-concept-directions .lf-shutter { padding:12px; }
+    #lf-concept-directions .lf-lanes { gap:16px; }
+    #lf-concept-directions .lf-lane { padding:12px; min-height:138px; }
+    #lf-concept-directions .lf-lane strong { font-size:19px; }
+    #lf-concept-directions .lf-records { gap:5px; }
+    #lf-concept-directions .lf-record { padding:13px 8px; min-height:148px; }
+    #lf-concept-directions .lf-record strong { font-size:15px; }
+  }
+  @media(prefers-reduced-motion:reduce) {
+    #lf-concept-directions .lf-film * { transition:none !important; }
+  }
+</style>
+<div id="lf-concept-directions">
+  <div class="viz-carousel viz-dotted-background" aria-label="Learning Fair 콘셉트 비교" data-previous-label="이전 콘셉트" data-next-label="다음 콘셉트">
+    <section class="lf-stage" data-variant="오픈 스튜디오" aria-label="오픈 스튜디오 콘셉트">
+      <div class="lf-film lf-open" aria-label="업무 창을 여는 화면 제안">
+        <div class="lf-kicker"><span>AI 4 AI / OPEN DC</span><span>2026 LEARNING FAIR</span></div>
+        <p class="lf-headline">서로의 일을 열면,<br>배움이 넓어집니다.</p>
+        <div class="lf-window-grid">
+          <div class="lf-window"><span class="lf-window-title">내가 맡은 일</span><span class="lf-window-detail">익숙한 업무와 경험</span></div>
+          <div class="lf-window"><span class="lf-window-title">함께 배울 일</span><span class="lf-window-detail">동료의 업무 · 새로운 관점</span><div class="lf-shutter" aria-hidden="true">그 부서는<br>어떤 일을 할까?</div></div>
+        </div>
+        <div class="lf-bottom"><span>알아보고 · 함께 해보고 · 나누다</span><span>자체 디자인 제안 · KV 적용 전</span></div>
+      </div>
+      <div class="lf-action"><button type="button" class="btn" data-motion="open" aria-pressed="false">창 열기</button><span class="text-small" role="status">궁금증에서 동료의 일로</span></div>
+    </section>
+    <section class="lf-stage" data-variant="협동 플레이" aria-label="협동 플레이 콘셉트" hidden>
+      <div class="lf-film lf-coop" aria-label="두 관점이 공동 참여로 만나는 화면 제안">
+        <div class="lf-kicker"><span>AI 4 AI / CO-OP</span><span>2026 LEARNING FAIR</span></div>
+        <p class="lf-headline">각자의 경험을,<br>함께 해볼 기회로.</p>
+        <div class="lf-lanes">
+          <div class="lf-lane"><span class="lf-lane-tag">나의 관점</span><strong>내가<br>아는 일</strong></div>
+          <div class="lf-lane"><span class="lf-lane-tag">동료의 관점</span><strong>함께<br>해볼 일</strong></div>
+        </div>
+        <div class="lf-join">서로 다른 경험, 하나의 공동 과제</div>
+        <div class="lf-bottom"><span>두 관점에서 공동 참여로</span><span>자체 디자인 제안 · KV 적용 전</span></div>
+      </div>
+      <div class="lf-action"><button type="button" class="btn" data-motion="coop" aria-pressed="false">함께 보기</button><span class="text-small" role="status">각자의 관점에서 공동 참여로</span></div>
+    </section>
+    <section class="lf-stage" data-variant="배움의 기록" aria-label="배움의 기록 콘셉트" hidden>
+      <div class="lf-film lf-archive" aria-label="경험의 기록을 펼치는 화면 제안">
+        <div class="lf-kicker"><span>AI 4 AI / LEARNING NOTES</span><span>2026 LEARNING FAIR</span></div>
+        <p class="lf-headline">한 사람의 경험을,<br>다음 사람의 배움으로.</p>
+        <div class="lf-records">
+          <div class="lf-record"><span>관점</span><strong>밖에서<br>만난<br>지식</strong></div>
+          <div class="lf-record"><span>경험</span><strong>동료와<br>함께<br>해본 일</strong></div>
+          <div class="lf-record"><span>공유</span><strong>다음<br>사람에게<br>남긴 것</strong></div>
+        </div>
+        <div class="lf-bottom"><span>경험을 남기고 다시 나누다</span><span>자체 디자인 제안 · KV 적용 전</span></div>
+      </div>
+      <div class="lf-action"><button type="button" class="btn" data-motion="archive" aria-pressed="false">기록 펼치기</button><span class="text-small" role="status">개별 경험에서 함께 보는 기록으로</span></div>
+    </section>
+  </div>
+</div>
+<script>
+  (() => {
+    const root = document.getElementById('lf-concept-directions');
+    const labels = {
+      open:['창 열기','창 닫기','궁금증에서 동료의 일로','동료의 일이 함께 배울 일로 보입니다'],
+      coop:['함께 보기','관점 나누기','각자의 관점에서 공동 참여로','두 관점이 같은 공동 과제를 향합니다'],
+      archive:['기록 펼치기','기록 모으기','개별 경험에서 함께 보는 기록으로','관점·경험·공유를 나란히 봅니다']
+    };
+    root.querySelectorAll('[data-motion]').forEach(button => {
+      const stage = button.closest('section');
+      const film = stage.querySelector('.lf-film');
+      const status = stage.querySelector('[role="status"]');
+      button.addEventListener('click', () => {
+        const active = film.classList.toggle('is-open');
+        button.setAttribute('aria-pressed', String(active));
+        button.textContent = labels[button.dataset.motion][active ? 1 : 0];
+        status.textContent = labels[button.dataset.motion][active ? 3 : 2];
+      });
+    });
+    if (globalThis.Tweak) {
+      [['.lf-open','--lf-green','#cce58b'],['.lf-coop','--lf-mint','#8ee0ce'],['.lf-archive','--lf-note','#e0b884']].forEach(([selector,token,color]) => {
+        const film = root.querySelector(selector);
+        const state = {accent:color};
+        const tweak = new Tweak({container:film,onChange:() => film.style.setProperty(token,state.accent)});
+        tweak.addColorPicker(state,'accent',{label:'강조색',reference:token});
+      });
+    }
+  })();
+</script>

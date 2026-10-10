@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-10-10",
+  "browser": "Microsoft Edge (Playwright)",
+  "results": [
+    {
+      "colorScheme": "light",
+      "width": 736,
+      "variant": "오픈 스튜디오",
+      "layout": {
+        "width": 704,
+        "scroll": 704,
+        "height": 460,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "light",
+      "width": 736,
+      "variant": "협동 플레이",
+      "layout": {
+        "width": 704,
+        "scroll": 704,
+        "height": 460,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "light",
+      "width": 736,
+      "variant": "배움의 기록",
+      "layout": {
+        "width": 704,
+        "scroll": 704,
+        "height": 460,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "light",
+      "width": 320,
+      "variant": "오픈 스튜디오",
+      "layout": {
+        "width": 288,
+        "scroll": 288,
+        "height": 480,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "light",
+      "width": 320,
+      "variant": "협동 플레이",
+      "layout": {
+        "width": 288,
+        "scroll": 288,
+        "height": 480,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "light",
+      "width": 320,
+      "variant": "배움의 기록",
+      "layout": {
+        "width": 288,
+        "scroll": 288,
+        "height": 480,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "width": 736,
+      "variant": "오픈 스튜디오",
+      "layout": {
+        "width": 704,
+        "scroll": 704,
+        "height": 460,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "width": 736,
+      "variant": "협동 플레이",
+      "layout": {
+        "width": 704,
+        "scroll": 704,
+        "height": 460,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "width": 736,
+      "variant": "배움의 기록",
+      "layout": {
+        "width": 704,
+        "scroll": 704,
+        "height": 460,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "width": 320,
+      "variant": "오픈 스튜디오",
+      "layout": {
+        "width": 288,
+        "scroll": 288,
+        "height": 480,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "width": 320,
+      "variant": "협동 플레이",
+      "layout": {
+        "width": 288,
+        "scroll": 288,
+        "height": 480,
+        "textFits": true
+      },
+      "interaction": "pass"
+    },
+    {
+      "colorScheme": "dark",
+      "width": 320,
+      "variant": "배움의 기록",
+      "layout": {
+        "width": 288,
+        "scroll": 288,
+        "height": 480,
+        "textFits": true
+      },
+      "interaction": "pass"
+    }
+  ],
+  "reducedMotion": "pass",
+  "runtimeErrors": []
+}

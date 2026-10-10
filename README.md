@@ -8,6 +8,7 @@
 
 ## 바로 보는 제작 파일
 
+- **디자인·콘셉트 추천:** [게임·영화·방송·기업 11개 사례 비교](docs/12-design-concept-references.md). 오픈 스튜디오를 추천하며 협동 플레이·배움의 기록 시안과 비교한다. 정식 대본·PPTX 적용 전 제안이다.
 - **2026-10-10 수정 검토안:** [발표자 관점·새 콘셉트](docs/10-presenter-review.md) · [애니메이션 검토](docs/11-motion-review.md). ‘AI 4 AI — 배움이 부서를 넘을 때’를 추천한다. 동료의 일에 대한 질문으로 시작하고 IAP는 약 40초의 대표 사례로 배정했다. 아래 v0.1 대본·PPTX에는 아직 적용하지 않았다.
 - [스토리라인과 콘셉트 후보](docs/02-concept-storyline.md)
 - [편집 가능한 PPTX — 본편 10장·참고 부록 3장](deliverables/learning-fair-2026.pptx)
@@ -43,6 +44,7 @@
 | [09 검수](docs/09-validation.md) | 검수 근거와 남은 제작 단계 확인 |
 | [10 발표자 검토](docs/10-presenter-review.md) | 상투성·구성·두 화자의 역할과 추천 개정안 비교 |
 | [11 애니메이션 검토](docs/11-motion-review.md) | 발화에 필요한 모션·전환·시간 포함 관계 확인 |
+| [12 디자인·콘셉트 사례](docs/12-design-concept-references.md) | 공식 사례 11개와 자체 시안 3개를 비교해 연출 방향 검토 |
 
 ## 파일 구조
 
