@@ -12,6 +12,8 @@ Run from the repository root. Install: `uv venv .venv` then `uv pip install --py
 
 No formatter or linter is configured. Use Python with four-space indentation and snake_case. Use UTF-8 Korean production documents, kebab-case filenames, and source IDs P01–P10 for main slides, A01–A03 for hidden appendices, S01–S10 for scenes, IMG01–IMG14 for internal assets. External image IDs use IMG-01 etc. Maintain slide/cue/speaker/timing agreement across generated outputs. Rebuild rather than hand-edit generated storyboard, script, PPTX, teleprompter, and timing reports.
 
+The user's 2026-10-10 direction places cross-department exchange and learning culture at the center of the film. IAP is one representative outcome, not the narrative spine. Do not use an IAP opening or frame every activity as background to IAP. Balance screen emphasis as well as speaking time. The updated review proposal in `docs/10-presenter-review.md` and `docs/11-motion-review.md` is separate from the existing v0.1 script and deck until those are regenerated.
+
 ## Testing Guidelines
 
 No general test framework or coverage target is configured. The focused validation command checks 300-second timing continuity, pronunciation-based estimates, scene cues, internal asset references, PPTX integrity/layout/notes, hidden appendices, actual PDF/PNG renders, and reference asset hashes. Inspect the contact sheet after rendering. Treat reading time as an estimate until rehearsal measurements exist; never substitute participant counts for performance gains. Add separate tests only for material new behavior that this validation does not cover.
