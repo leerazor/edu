@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "package": "worldcup",
+  "passed_checks": 1772,
+  "errors": [],
+  "unavailable": [],
+  "metrics": {
+    "main_allocated_seconds": 275,
+    "total_seconds": 300,
+    "selection_status": "촬영용 선택안",
+    "actual_vote": false,
+    "total_spoken_syllables": 937,
+    "main_estimates_seconds": {
+      "slow": 247.09,
+      "baseline": 227.69,
+      "fast": 211.4
+    },
+    "measured_rehearsal_scenes": 0,
+    "pdf_font_names": [
+      "BCDEEE+MalgunGothic",
+      "BCDFEE+MalgunGothic",
+      "BCDGEE+MalgunGothicBold",
+      "BCDHEE+MalgunGothicBold"
+    ],
+    "preview_pdf_luminance_difference": {
+      "P01": 0.0071,
+      "P02": 0.0066,
+      "P03": 0.0073,
+      "P04": 0.0074,
+      "P05": 0.0071,
+      "P06": 0.0071,
+      "P07": 0.0069,
+      "P08": 0.0064,
+      "P09": 0.0073,
+      "P10": 0.0068,
+      "A01": 0.0079,
+      "A02": 0.007,
+      "A03": 0.007
+    }
+  },
+  "artifact_sha256": {
+    "content/worldcup-film.json": "ffc1f4ad43246154c1ff254c24039065da6e1a4a0b6237b3c820f3965391c5e5",
+    "deliverables/worldcup/learning-fair-2026-worldcup.pptx": "df623d0a6c1195337c07720833f7c5a2aafe9751fb5334f6b1697506348ce80e",
+    "deliverables/worldcup/learning-fair-2026-worldcup.pdf": "3cefc8a83f046c6e1bd39808e6862411843e00e34c68519ac7710f9f07310261",
+    "deliverables/worldcup/choice-states.pptx": "c2f4651cfc01ac1ee636c036d205ddb3e3da83c78c7712d4ca7782575ee5d84d",
+    "deliverables/worldcup/choice-states.pdf": "dffd39ab46f2283cb9e6e1ee74fba5c5f844aa4d938ef9191d960837f0f84093",
+    "docs/worldcup/01-storyboard.md": "2448f1d7eb8c710c6c33555b9054158d699209e73ca8f6142857f06105116f6b",
+    "docs/worldcup/02-script.md": "2c1a3f6a4bed41e6bbf5fb0e16fc4a0d85329f250d5672e51cb10f8101fe38af",
+    "deliverables/worldcup/teleprompter.txt": "c630a67b15cc9358027eccbc399969f1521d4514274dd7e45045fc1e42ce1e9d",
+    "deliverables/worldcup/rehearsal.csv": "c5d33789dd66f7ed77e16b02e20f90f795b22d22139d85a2f03e9759a0f46572",
+    "deliverables/worldcup/timing-report.json": "aef6c277188769e20cba01f9c3692b82498d334689566e76cdbb6da999a82094"
+  },
+  "limits": [
+    "발화량은 계획 추정이며 실제 리허설 기록을 대체하지 않음",
+    "선택 결과는 촬영용 선택안이며 실제 투표·공식 팀원 평가 아님",
+    "내부 사진·회사 KV는 미수급, 실제 촬영·편집은 별도",
+    "도형·PDF 텍스트 영역과 파일 일치를 자동 검증하되 최종 가독성·모션은 수동 검토 필요"
+  ]
+}
