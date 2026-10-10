@@ -1,0 +1,177 @@
+<section id="lf-motion-review-20261010" aria-label="IAP 알림 자동화 모션 검토">
+  <style>
+    #lf-motion-review-20261010 .motion-plot { width: 100%; margin: 12px 0; }
+    #lf-motion-review-20261010 .motion-plot svg { display: block; width: 100%; overflow: visible; }
+    #lf-motion-review-20261010 .motion-label { fill: var(--foreground); font-size: 12px; font-weight: 500; }
+    #lf-motion-review-20261010 .motion-caption { fill: var(--muted-foreground); font-size: 12px; font-weight: 400; }
+    #lf-motion-review-20261010 .motion-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    #lf-motion-review-20261010 .motion-seek { flex: 1 1 180px; min-width: 0; }
+    #lf-motion-review-20261010 .motion-seek label { display: flex; justify-content: space-between; gap: 12px; }
+    #lf-motion-review-20261010 .motion-status { min-height: 24px; margin-top: 8px; }
+  </style>
+  <h3>IAP · 말하는 단계에 한 번씩 강조</h3>
+  <div class="text-small text-muted">개념 표현 · 실제 화면과 처리 속도 아님</div>
+  <div class="motion-plot"></div>
+  <div class="motion-controls">
+    <button class="btn btn-primary" type="button" data-action="play">8초 재생</button>
+    <div class="motion-seek">
+      <label class="form-label" for="lf-motion-time-20261010">
+        <span>편집 시간</span><output class="tabular-nums" for="lf-motion-time-20261010">0.0 / 8.0초</output>
+      </label>
+      <input class="form-range" id="lf-motion-time-20261010" type="range" min="0" max="8" step="0.1" value="0" aria-label="모션 예시 편집 시간">
+    </div>
+  </div>
+  <div class="motion-status text-small" role="status" aria-live="polite">특정 패턴 감지</div>
+  <script>
+    (() => {
+      const root = document.getElementById('lf-motion-review-20261010');
+      const plot = root.querySelector('.motion-plot');
+      const playButton = root.querySelector('[data-action="play"]');
+      const seek = root.querySelector('input');
+      const output = root.querySelector('output');
+      const status = root.querySelector('[role="status"]');
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const namespace = 'http://www.w3.org/2000/svg';
+      const stages = [
+        {title: '특정 패턴 감지', caption: '서버 로그'},
+        {title: '정해진 포맷', caption: '메시지 구성'},
+        {title: '메신저 동보', caption: '알림 자동 전달'}
+      ];
+      let elapsed = 0;
+      let playing = false;
+      let lastTick = 0;
+      let request = 0;
+      let fills = [];
+      let markers = [];
+      let paths = [];
+      let centers = [];
+      let vertical = false;
+      let previousStatus = '';
+
+      function element(tag, attributes, value) {
+        const node = document.createElementNS(namespace, tag);
+        Object.entries(attributes || {}).forEach(([key, val]) => node.setAttribute(key, val));
+        if (value !== undefined) node.textContent = value;
+        return node;
+      }
+      function readState(value) {
+        const saved = value?.privateContent;
+        if (saved?.version === 1 && Number.isFinite(saved.time)) elapsed = Math.max(0, Math.min(8, saved.time));
+      }
+      function saveState() {
+        window.openai?.setWidgetState?.({
+          modelContent: {motion: 'IAP 알림 자동화의 단계 강조', previewTimeSeconds: Math.round(elapsed * 10) / 10},
+          privateContent: {version: 1, time: elapsed}
+        })?.catch(() => {});
+      }
+      function draw() {
+        const width = Math.max(260, Math.round(plot.getBoundingClientRect().width));
+        vertical = width < 560;
+        const height = vertical ? 324 : 150;
+        const nodeWidth = vertical ? Math.min(350, width - 32) : (width - 100) / 3;
+        const nodeHeight = 68;
+        const svg = element('svg', {viewBox: `0 0 ${width} ${height}`, width, height, role: 'img', 'aria-label': '서버 로그의 특정 패턴 감지, 정해진 포맷의 메시지 구성, 메신저 동보 순서. 강조가 발화 순서대로 한 번 이동합니다.'});
+        svg.append(element('title', {}, 'IAP 알림 업무의 세 단계'));
+        fills = []; markers = []; paths = []; centers = [];
+        stages.forEach((stage, index) => {
+          const x = vertical ? (width - nodeWidth) / 2 : 16 + index * (nodeWidth + 34);
+          const y = vertical ? 12 + index * 110 : 27;
+          const fill = element('rect', {x, y, width: nodeWidth, height: nodeHeight, rx: 8, fill: 'var(--muted)'});
+          const label = element('text', {x: x + nodeWidth / 2, y: y + 28, 'text-anchor': 'middle', class: 'motion-label'}, stage.title);
+          const caption = element('text', {x: x + nodeWidth / 2, y: y + 49, 'text-anchor': 'middle', class: 'motion-caption'}, stage.caption);
+          svg.append(fill, label, caption);
+          fills.push(fill);
+          centers.push({x: x + nodeWidth / 2, y: y + nodeHeight / 2, left: x, top: y, right: x + nodeWidth, bottom: y + nodeHeight});
+        });
+        for (let index = 0; index < 2; index++) {
+          const a = centers[index];
+          const b = centers[index + 1];
+          const start = vertical ? {x: a.x, y: a.bottom + 6} : {x: a.right + 6, y: a.y};
+          const end = vertical ? {x: b.x, y: b.top - 6} : {x: b.left - 6, y: b.y};
+          const line = element('line', {x1: start.x, y1: start.y, x2: end.x, y2: end.y, stroke: 'var(--border)', 'stroke-width': 1.5});
+          const dot = element('circle', {cx: start.x, cy: start.y, r: 3, fill: 'var(--viz-series-1)', opacity: 0});
+          svg.append(line, dot);
+          paths.push({start, end}); markers.push(dot);
+        }
+        plot.replaceChildren(svg);
+        render();
+      }
+      function render() {
+        const step = elapsed < 2.6 ? 0 : elapsed < 5.2 ? 1 : 2;
+        fills.forEach((node, index) => {
+          const active = elapsed >= 8 || index === step;
+          node.setAttribute('fill', active ? 'color-mix(in srgb, var(--viz-series-1) 18%, var(--background))' : 'var(--muted)');
+          node.setAttribute('data-highlighted', active ? 'true' : 'false');
+        });
+        markers.forEach((dot, index) => {
+          const begin = index === 0 ? 1.6 : 4.2;
+          const progress = Math.max(0, Math.min(1, elapsed - begin));
+          const visible = !reduced.matches && elapsed >= begin && elapsed <= begin + 1;
+          const {start, end} = paths[index];
+          dot.setAttribute('cx', start.x + (end.x - start.x) * progress);
+          dot.setAttribute('cy', start.y + (end.y - start.y) * progress);
+          dot.setAttribute('opacity', visible ? '1' : '0');
+        });
+        seek.value = String(Math.round(elapsed * 10) / 10);
+        output.textContent = `${elapsed.toFixed(1)} / 8.0초`;
+        playButton.textContent = playing ? '일시정지' : elapsed >= 8 ? '다시 보기' : '8초 재생';
+        const nextStatus = reduced.matches ? '동작 줄이기 · 완성 화면 유지' : elapsed >= 8 ? '완성 화면 유지 · 자동 반복 없음' : stages[step].title;
+        if (nextStatus !== previousStatus) {
+          status.textContent = nextStatus;
+          previousStatus = nextStatus;
+        }
+        root.dataset.time = elapsed.toFixed(2);
+        root.dataset.playing = String(playing);
+      }
+      function stop() {
+        playing = false;
+        cancelAnimationFrame(request);
+        render();
+      }
+      function tick(now) {
+        if (!playing) return;
+        elapsed = Math.min(8, elapsed + (now - lastTick) / 1000);
+        lastTick = now;
+        if (elapsed >= 8) {
+          stop();
+          saveState();
+          return;
+        }
+        render();
+        request = requestAnimationFrame(tick);
+      }
+      playButton.addEventListener('click', () => {
+        if (reduced.matches) {
+          elapsed = 8; stop(); saveState(); return;
+        }
+        if (playing) { stop(); saveState(); return; }
+        if (elapsed >= 8) elapsed = 0;
+        playing = true;
+        lastTick = performance.now();
+        render();
+        request = requestAnimationFrame(tick);
+      });
+      seek.addEventListener('input', () => {
+        elapsed = reduced.matches ? 8 : Number(seek.value);
+        stop();
+      });
+      seek.addEventListener('change', saveState);
+      reduced.addEventListener('change', () => {
+        if (reduced.matches) { elapsed = 8; stop(); }
+        else render();
+      });
+      window.addEventListener('openai:set_globals', (event) => {
+        if (!playing && event.detail?.globals?.widgetState) {
+          readState(event.detail.globals.widgetState);
+          if (reduced.matches) elapsed = 8;
+          render();
+        }
+      });
+      document.addEventListener('visibilitychange', () => { if (document.hidden && playing) stop(); });
+      readState(window.openai?.widgetState);
+      if (reduced.matches) elapsed = 8;
+      new ResizeObserver(draw).observe(plot);
+      draw();
+    })();
+  </script>
+</section>

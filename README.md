@@ -8,6 +8,7 @@
 
 ## 바로 보는 제작 파일
 
+- **2026-10-10 검토 제안:** [발표자 관점·새 콘셉트](docs/10-presenter-review.md) · [애니메이션 검토](docs/11-motion-review.md). 현재 v0.1과 비교할 개정 제안이다.
 - [스토리라인과 콘셉트 후보](docs/02-concept-storyline.md)
 - [편집 가능한 PPTX — 본편 10장·참고 부록 3장](deliverables/learning-fair-2026.pptx)
 - [PPTX의 실제 PowerPoint 렌더 PDF](deliverables/learning-fair-2026.pdf)
@@ -40,6 +41,8 @@
 | [07 AI 소개](docs/07-ai-intro-brief.md) | 15초 3컷 영상·자막·연결 제작 |
 | [08 전달](docs/08-handoff.md) | 영상팀 전달·원본 교체·촬영 준비 |
 | [09 검수](docs/09-validation.md) | 검수 근거와 남은 제작 단계 확인 |
+| [10 발표자 검토](docs/10-presenter-review.md) | 상투성·구성·두 화자의 역할과 추천 개정안 비교 |
+| [11 애니메이션 검토](docs/11-motion-review.md) | 발화에 필요한 모션·전환·시간 포함 관계 확인 |
 
 ## 파일 구조
 
