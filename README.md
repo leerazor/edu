@@ -1,14 +1,21 @@
 # 2026 Learning Fair — AI 4 AI
 
-Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영상 제작 프로젝트다. 출연은 **류경동 팀장·이관우 교육담당**이다. 최신 별도 제작안은 **「AI 4 AI — 함께 쌓는 전문성」**이며 기존 기본본과 월드컵본도 보존한다.
+Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영상 제작 프로젝트다. 출연은 **류경동 팀장·이관우 교육담당**이다. **현재 이야기·화면 구성의 기준은 초안 「AI 4 AI — 연결이 성장의 인프라가 되다」**다. 마지막 생성본은 공동 해설 v05이며 모든 제작본을 보존한다.
 
 > 이 문서에서 해야 할 일: 콘셉트와 검토용 제작 패키지를 확인하고, 문서별 지시에 따라 내부 원본 확보·리허설·촬영·편집을 진행한다.
 
 밖의 지식을 배우고, 서로의 일을 이해하고, 부서를 넘어 함께 실행하며, 그 경험을 다시 나눈다. **구성원의 교류와 학습문화가 영상의 중심**이며, Tech X에서 팀 주요 미션으로 확장된 **IAP는 대표 성과 사례 중 하나**다. 서버 로그의 특정 패턴을 감지해 정해진 포맷의 메신저 알림을 자동 동보하는 실제 사례와, 팀 인프라 전반으로 확대하려는 방향을 구분한다.
 
+## 현재 검토 기준
+
+2026-10-11 사용자 의견에 따라 제작본 7종의 PPT·대본과 기존 형식 제안을 다시 비교했다. **전체 흐름과 설명 도식은 초안 `learning-fair-2026.pptx`가 가장 좋다**고 판단했다. 질문 → AI 인프라와 운영의 두 역할 → 배움·이해·공동 실행·재공유 → ‘성장의 인프라’로 회수하는 구조를 기준으로 삼는다.
+
+[전체 비교와 판단 근거](docs/18-full-version-review.md)에 버전별 장점·손실과 다음 수정 기준을 정리했다. 초안의 IAP 73초는 줄이고 이관우의 실제 GPU 참여 경험은 선별해 반영할 가치가 있다. 이번 검토에서 기존 PPT·대본을 바꾸거나 새 제작본을 생성하지 않았다.
+
 ## 바로 보는 제작 파일
 
-- **2026-10-11 최신 공동 해설 v05:** [PPTX](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PowerPoint PDF](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) · [대본](docs/editorial-v05/02-script.md) · [콘티](docs/editorial-v05/01-storyboard.md). **화면은 짧은 제목과 사실, 대본은 말로 전하는 이유와 경험**으로 전면 교정했다. ‘AI 4 AI — 함께 쌓는 전문성’. [문구 전후 비교](docs/editorial-v05/03-copy-review.md) · [자료 삽입·전달 안내](docs/editorial-v05/04-handoff.md).
+- **현재 서사·화면 기준: 초안 기본본** — [PPTX](deliverables/learning-fair-2026.pptx) · [PDF](deliverables/learning-fair-2026.pdf) · [대본](docs/06-script.md) · [콘티](docs/05-storyboard.md). 당시 제작본 그대로 보존했다. [전체 비교](docs/18-full-version-review.md).
+- **마지막 생성본 공동 해설 v05:** [PPTX](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PowerPoint PDF](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) · [대본](docs/editorial-v05/02-script.md) · [콘티](docs/editorial-v05/01-storyboard.md). **화면은 짧은 제목과 사실, 대본은 말로 전하는 이유와 경험**으로 전면 교정했다. ‘AI 4 AI — 함께 쌓는 전문성’. [문구 전후 비교](docs/editorial-v05/03-copy-review.md) · [자료 삽입·전달 안내](docs/editorial-v05/04-handoff.md).
 
 - **보존된 공동 해설 v04:** [PPTX](deliverables/editorial-v04/learning-fair-2026-editorial-v04.pptx) · [PowerPoint PDF](deliverables/editorial-v04/learning-fair-2026-editorial-v04.pdf) · [대본](docs/editorial-v04/02-script.md) · [콘티](docs/editorial-v04/01-storyboard.md). **AI를 잘 지원하고 활용하기 위해 서로의 전문성을 배우며 성장한다**는 관계로 묶었다. GPU 과제의 실제 참여 경험과 별도 IAP 사례로 기술·교류·성장을 구체화한다. [통합 서사 검토](docs/editorial-v04/03-story-review.md) · [자료 삽입·전달 안내](docs/editorial-v04/04-handoff.md).
 - **보존된 공동 해설 v03:** [PPTX](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PowerPoint PDF](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) · [대본](docs/editorial-v03/02-script.md) · [콘티](docs/editorial-v03/01-storyboard.md). **팀 역할과 교육문화의 핵심부터 설명**한다. DS부문 인프라 책임·AI 활용 운영 효율화 → 배우다 → 함께 해보다 → 다시 나누다. 팀 규모 강조를 빼고 AI 4 AI 세미나를 앞쪽으로 옮겼다. [흐름 검토](docs/editorial-v03/03-story-review.md) · [새 자료 삽입표](docs/editorial-v03/04-handoff.md).
@@ -30,9 +37,11 @@ Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영�
 - [발음 표기 프롬프터](deliverables/teleprompter.txt)
 - [영상팀 전달 안내](docs/08-handoff.md)
 
-![최신 공동 해설 v05 미리보기](deliverables/editorial-v05/preview/contact-sheet.jpg)
+![현재 기준으로 선택한 초안 미리보기](deliverables/preview/contact-sheet.jpg)
 
 ## 공동 해설 개정본
+
+아래는 v05의 생성 기록이다. 현재 추천 기준은 위의 초안이며, 문구 교정 완료를 전체 서사 개선으로 간주하지 않는다.
 
 v05는 화면 제목·보조 문구·사진 자리·대본을 함께 고쳤다. ‘옆 부서의 일’, ‘부서를 넘는 프로젝트’, ‘같은 과제, 다른 관점’처럼 각 장면에서 보여줄 내용을 제목으로 썼다. 설명문과 당위형 제목, 상단·본문·대본의 불필요한 반복을 줄였다. [문구 교정 기록](docs/editorial-v05/03-copy-review.md)에서 전후를 비교할 수 있다.
 
@@ -85,10 +94,11 @@ DS부문 인프라를 책임지고 AI로 운영 업무를 효율화하는 팀의
 | [14 버전 보존](docs/14-version-index.md) | 기본본·월드컵의 PPT·대본·콘티를 함께 찾고 개정본의 별도 저장 원칙 확인 |
 | [15 방송 형식 추천](docs/15-broadcast-format-recommendations.md) | 방송 형식 4개를 비교하고 한 가지 고민을 끝까지 푸는 2인 토크의 질문·사례·결말 검토 |
 | [16 유튜브 형식 비교](docs/16-youtube-format-comparison.md) | 국내외 13개 후보의 진행 원리·제작 조건·출처를 비교하고 기존 상담형과 설정 없는 설명형도 함께 재검토 |
-| [17 최종 형식 판단](docs/17-format-decision.md) | 공동 해설 추천의 이유·도입·장면 연결·화면 원칙을 검토하고 별도 제작본의 기준으로 사용 |
-| [최신 v05 지침](docs/editorial-v05/00-production-guidelines.md) | 화면 문구와 촬영 대사를 구분하고 구체적인 단어로 교정 |
-| [최신 v05 문구 교정](docs/editorial-v05/03-copy-review.md) | 10장 제목 전후 비교와 대본 교정 근거 확인 |
-| [최신 v05 전달](docs/editorial-v05/04-handoff.md) | 수정한 제목·대사·자료 큐와 실제 자료 9곳 확인 |
+| [17 당시 형식 판단](docs/17-format-decision.md) | 공동 해설 추천의 이유·도입·장면 연결·화면 원칙을 검토하고 별도 제작본의 기준으로 사용 |
+| [18 전체 제작본 비교](docs/18-full-version-review.md) | 초안을 기준으로 재선정한 이유, 후속판의 장점·손실과 다음 수정 원칙 확인 |
+| [v05 생성본 지침](docs/editorial-v05/00-production-guidelines.md) | 화면 문구와 촬영 대사를 구분하고 구체적인 단어로 교정 |
+| [v05 생성본 문구 교정](docs/editorial-v05/03-copy-review.md) | 10장 제목 전후 비교와 대본 교정 근거 확인 |
+| [v05 생성본 전달](docs/editorial-v05/04-handoff.md) | 수정한 제목·대사·자료 큐와 실제 자료 9곳 확인 |
 | [보존 v04 지침](docs/editorial-v04/00-production-guidelines.md) | AI 지원·활용의 방향과 전문성 교류·성장의 관계를 같은 기준으로 적용 |
 | [보존 v04 통합 검토](docs/editorial-v04/03-story-review.md) | 두 서사 대안, 채택 이유와 실제 경험·적용·공유의 연결 검토 |
 | [보존 v04 전달](docs/editorial-v04/04-handoff.md) | 새 제목·도입·자료 삽입·촬영 큐 확인 |

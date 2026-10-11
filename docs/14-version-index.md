@@ -2,16 +2,18 @@
 
 > 이 문서에서 해야 할 일: 검토할 버전을 먼저 선택한 뒤 같은 행의 PPT·대본·콘티를 함께 연다. 기존 제작본은 보존하고, 후속 개정본은 별도 경로로 추가한다.
 
+**현재 서사·화면 기준:** 사용자 의견과 제작본 7종 비교에 따라 [초안 기본본](../deliverables/learning-fair-2026.pptx)을 선택했다. [전체 비교](18-full-version-review.md)를 따른다. v05는 마지막 생성본이며 현재 추천안이라는 뜻은 아니다. 이번 검토로 기존 파일은 바꾸지 않았다.
+
 **2026-10-11 보존 기준:** 커밋 `86007d110858f7cf9f75c6b026f969495daed5b9`에 저장된 기본본과 월드컵 추가본. 스토리라인 검토를 시작하기 전에 GitHub `main`과 이 커밋이 일치함을 확인했다.
 
 | 버전 | PPT·PDF | 대본·콘티 | 상태 |
 | --- | --- | --- | --- |
-| **최신 공동 해설 editorial-v0.5** | [PPTX](../deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PDF](../deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) | [대본](editorial-v05/02-script.md) · [콘티](editorial-v05/01-storyboard.md) | 화면은 짧은 제목과 사실, 대본은 이유와 경험으로 전면 교정. ‘함께 쌓는 전문성’. [문구 비교](editorial-v05/03-copy-review.md). 기존 194개 제작 파일 보존 |
+| 마지막 생성본 editorial-v0.5 | [PPTX](../deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PDF](../deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) | [대본](editorial-v05/02-script.md) · [콘티](editorial-v05/01-storyboard.md) | 화면은 짧은 제목과 사실, 대본은 이유와 경험으로 전면 교정. ‘함께 쌓는 전문성’. [문구 비교](editorial-v05/03-copy-review.md). 기존 194개 제작 파일 보존 |
 | 공동 해설 editorial-v0.4 | [PPTX](../deliverables/editorial-v04/learning-fair-2026-editorial-v04.pptx) · [PDF](../deliverables/editorial-v04/learning-fair-2026-editorial-v04.pdf) | [대본](editorial-v04/02-script.md) · [콘티](editorial-v04/01-storyboard.md) | AI 지원·활용을 위해 전문성을 교류하며 성장하는 이야기. ‘서로에게 배우는 인프라 팀’. [통합 검토](editorial-v04/03-story-review.md). 기존 164개 제작 파일 보존 |
 | 공동 해설 editorial-v0.3 | [PPTX](../deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PDF](../deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) | [대본](editorial-v03/02-script.md) · [콘티](editorial-v03/01-storyboard.md) | 2026-10-11 사용자 피드백 반영. 팀 역할·교류 성장 핵심 → 배우기·함께 해보기·다시 나누기. [흐름 검토](editorial-v03/03-story-review.md). 이전 제작본 모두 보존 |
 | 공동 해설 editorial-v0.2 | [PPTX](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pptx) · [PDF](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pdf) | [대본](editorial-v02/02-script.md) · [콘티](editorial-v02/01-storyboard.md) | 2026-10-11 추가 사실 반영. 이관우 참여 경험·팀장 관점·모집 방식·자료 삽입 9곳. [검토·제출 일정](editorial-v02/03-review-and-schedule.md). 리허설·실제 자료 삽입 전 |
 | **공동 해설 editorial-v0.1** | [PPTX](../deliverables/editorial/learning-fair-2026-editorial.pptx) · [PDF](../deliverables/editorial/learning-fair-2026-editorial.pdf) | [대본](editorial/02-script.md) · [콘티](editorial/01-storyboard.md) | 2026-10-11 별도 생성. ‘그 일, 같이 해볼까요?’ / [비판적 검토 기록](editorial/03-editorial-review.md). 실제 낭독·내부 원본 교체 전 |
-| 기존 기본본 v0.1 | [PPTX](../deliverables/learning-fair-2026.pptx) · [PDF](../deliverables/learning-fair-2026.pdf) | [대본](06-script.md) · [콘티](05-storyboard.md) | 2026-10-09 생성된 원본 보존. 후속 서사 검토가 자동 반영된 파일이 아님 |
+| **현재 서사·화면 기준: 기본본 v0.1** | [PPTX](../deliverables/learning-fair-2026.pptx) · [PDF](../deliverables/learning-fair-2026.pdf) | [대본](06-script.md) · [콘티](05-storyboard.md) | 2026-10-09 생성된 원본 보존. 후속 서사 검토가 자동 반영된 파일이 아님 |
 | 월드컵 추가본 v0.1 | [PPTX](../deliverables/worldcup/learning-fair-2026-worldcup.pptx) · [PDF](../deliverables/worldcup/learning-fair-2026-worldcup.pdf) | [대본](worldcup/02-script.md) · [콘티](worldcup/01-storyboard.md) | 2026-10-10 제작본 보존. 4강·결승과 Tech X 촬영용 선택안 |
 | 월드컵 v0.2 서사 제안 | 새 PPT 미생성 | [흐름 검토](worldcup/05-storyline-review.md) · [장면·연결 대사 제안](worldcup/06-storyline-revision-proposal.md) | 2026-10-11 검토 문서. 전체 촬영 대본·콘티·발화 검증 완료본이 아님 |
 
