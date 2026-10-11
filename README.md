@@ -8,6 +8,7 @@
 
 ## 바로 보는 제작 파일
 
+- **2026-10-11 유튜브 후보 비교:** [국내외 13개 후보·상담형·설정 없는 설명형 비교](docs/16-youtube-format-comparison.md). 공식 출처와 확인 범위, 실제 가져올 수 있는 장치와 제작 부담을 구분한 조사다. 비교를 먼저 기록하고 최종 방향은 이어서 재검토한다.
 - **2026-10-11 방송 형식 추천:** [고민 상담·꼬꼬무·유퀴즈·알쓸신잡 비교](docs/15-broadcast-format-recommendations.md). ‘AI 4 AI — 배움 상담소’를 추천한다. ‘옆 부서 일, 저도 배워봐도 될까요?’라는 한 질문을 Job Fair·Tech X 중심으로 풀고 IAP는 대표 사례로 사용한다. 기존 PPT·대본·콘티는 보존한 별도 구성 제안이다.
 - **2026-10-11 스토리라인 검토:** [월드컵에서 나열감이 생기는 이유](docs/worldcup/05-storyline-review.md) · [장면 연결과 대사 수정 제안](docs/worldcup/06-storyline-revision-proposal.md). 기존 제작 파일에 적용하지 않은 서사 제안이다. [버전별 PPT·대본·콘티 목록](docs/14-version-index.md)에서 기본본과 월드컵 초안을 모두 열 수 있다.
 - **월드컵 추가 버전:** [제작 기준](docs/worldcup/00-production-guidelines.md) · [PPTX](deliverables/worldcup/learning-fair-2026-worldcup.pptx) · [PDF](deliverables/worldcup/learning-fair-2026-worldcup.pdf) · [콘티](docs/worldcup/01-storyboard.md) · [대본](docs/worldcup/02-script.md) · [영상팀 전달](docs/worldcup/03-handoff.md). ‘다른 조직에 권하고 싶은 교류 방식은?’을 기준으로 4강·결승을 진행한다. 팀장이 질문과 선택 이유에 참여하며 IAP는 Tech X의 대표 사례 40초다. 선택 결과는 촬영용 제안이고 기존본과 별도로 보존한다.
@@ -64,6 +65,7 @@
 | [13 선택형 진행](docs/13-selection-show-format.md) | 월드컵·티어메이커의 장단점과 상황별 선택 대화 검토 |
 | [14 버전 보존](docs/14-version-index.md) | 기본본·월드컵의 PPT·대본·콘티를 함께 찾고 개정본의 별도 저장 원칙 확인 |
 | [15 방송 형식 추천](docs/15-broadcast-format-recommendations.md) | 방송 형식 4개를 비교하고 한 가지 고민을 끝까지 푸는 2인 토크의 질문·사례·결말 검토 |
+| [16 유튜브 형식 비교](docs/16-youtube-format-comparison.md) | 국내외 13개 후보의 진행 원리·제작 조건·출처를 비교하고 기존 상담형과 설정 없는 설명형도 함께 재검토 |
 
 ## 파일 구조
 
