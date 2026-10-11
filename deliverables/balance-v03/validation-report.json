@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "passed_checks": 2025,
+  "errors": [],
+  "metrics": {
+    "studio_seconds": 275,
+    "whole_seconds": 300,
+    "spoken_syllables": 894,
+    "estimates": {
+      "slow": 265.87,
+      "baseline": 247.35,
+      "fast": 231.8
+    },
+    "measured_scenes": 0,
+    "alternative_scene_estimates": {
+      "R01": {
+        "S02": {
+          "slow": 23.95,
+          "baseline": 22.13,
+          "fast": 20.6
+        }
+      },
+      "R02": {
+        "S04": {
+          "slow": 20.14,
+          "baseline": 18.65,
+          "fast": 17.4
+        },
+        "S05": {
+          "slow": 22.71,
+          "baseline": 20.91,
+          "fast": 19.4
+        }
+      },
+      "R03": {
+        "S07": {
+          "slow": 18.95,
+          "baseline": 17.57,
+          "fast": 16.4
+        },
+        "S08": {
+          "slow": 37.29,
+          "baseline": 34.3,
+          "fast": 31.8
+        }
+      }
+    },
+    "independent_questions": 3,
+    "choice_states": 9
+  },
+  "artifact_sha256": {
+    "content/balance-v03-film.json": "f450e0b407e9a534398bc64747e3747b68acdaa3ae86706cb8c2773afcd77a3a",
+    "docs/balance-v03/01-storyboard.md": "bcb8aff7a644c4f4d3a8d2914a2f37f9caeafa0f34b829576a8551d496683add",
+    "docs/balance-v03/02-script.md": "ed683958b06b904c6a87789d936a260d501d3183220255eae3106c55062fd4a9",
+    "deliverables/balance-v03/teleprompter.txt": "2a9931b6f9722b03effcb0234210b5aeb783d8c0a4f586ad734334ee1d4bb519",
+    "deliverables/balance-v03/timing-report.json": "d742dd74906a9b5a856f0f67e19256eb2400a526443bd06e199367a2418c714e",
+    "deliverables/balance-v03/learning-fair-2026-balance-v03.pptx": "3a3066ba2262f26afbebe4ff2691fce0bbaec9d6b6fdeaa311f46747044b9415",
+    "deliverables/balance-v03/learning-fair-2026-balance-v03.pdf": "3532e7c926adb70bef765e204abb85c8ee1570243f34f713675899a93feb133e",
+    "deliverables/balance-v03/choice-states.pptx": "8042e5ff5aa151903336cda24862751991dd305cf2cce0a3f4ab052c259a8fd7",
+    "deliverables/balance-v03/choice-states.pdf": "78c3d5d400b77c19bb0a62ffd504565464f20b3b1760bfa408c31577700b467f"
+  },
+  "limits": [
+    "Speech durations are estimates, not presenter rehearsal measurements.",
+    "Internal photo slots await user-supplied originals and company visual assets.",
+    "Contact sheets require visual inspection; no actual PowerPoint animation is embedded.",
+    "Alternative replies are timed proposals and must be synchronized after actual selection."
+  ]
+}

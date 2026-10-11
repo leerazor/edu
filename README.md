@@ -1,44 +1,46 @@
 # 2026 Learning Fair — AI 4 AI
 
-> 이 문서에서 해야 할 일: 검토할 제작본의 PPT·대본·콘티를 함께 열고, 자료 삽입·리허설·촬영을 준비한다. AI 작업자는 [공통 지침](CLAUDE.md)을 먼저 읽는다.
+> 이 문서에서 해야 할 일: 현재 제작본의 PPT·대본·콘티를 함께 검토하고, 사진 삽입·리허설·촬영을 준비한다. AI 작업자는 [공통 지침](CLAUDE.md)을 먼저 읽는다.
 
-Data Center팀 교육문화의 핵심은 **외부 기술과 동료의 경험을 나누며 함께 성장하는 것**이다. 출연자는 류경동 팀장·이관우 교육담당이다. 전문 영상팀이 촬영·편집한다.
+**현재 검토본: balance-v03 — 세 번의 선택, 함께 성장하는 이유.** 사용자가 제공한 [공유 대화의 마지막 방향](https://chatgpt.com/share/6acb6921-8494-83e8-b52c-0a51e1b1261a)을 바탕으로 자료와 대본을 다시 만들었다. 류경동 팀장과 이관우 교육담당이 세 번의 밸런스 게임을 통해 교류하며 성장하는 문화를 소개한다.
 
-현재 제작본은 **story-v02 / worldcup-v02 두 개**다. 사용자 정리 지시에 따라 이전 콘셉트·제작본·중복 지침을 현재 작업 트리에서 제거했다. 이전 작업은 Git 이력에서 찾을 수 있다. 현재 추천은 흐름형이며 최종 제출 형식은 미선택 상태다.
+## 자료와 촬영 문서
 
-## PPT·대본·콘티
-
-| 제작본 | 자료 | 촬영 문서 | 준비 안내 |
-| --- | --- | --- | --- |
-| **흐름형 story-v02 · 추천** | [PPTX](deliverables/story-v02/learning-fair-2026-story-v02.pptx) · [PDF](deliverables/story-v02/learning-fair-2026-story-v02.pdf) | [대본](docs/story-v02/02-script.md) · [콘티](docs/story-v02/01-storyboard.md) | [자료 삽입·흐름·촬영](docs/story-v02/04-handoff.md) |
-| **월드컵 worldcup-v02 · 대안** | [PPTX](deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pptx) · [PDF](deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pdf) | [대본](docs/worldcup-v02/02-script.md) · [콘티](docs/worldcup-v02/01-storyboard.md) | [자료 삽입·선택 공개·촬영](docs/worldcup-v02/04-handoff.md) |
-
-월드컵 [선택 전·후 6장 PPTX](deliverables/worldcup-v02/choice-states.pptx) · [PDF](deliverables/worldcup-v02/choice-states.pdf)는 기존 장면의 공개 큐에서 교체한다. 실제 투표 결과가 아닌 촬영용 추천안이다.
-
-![흐름형 미리보기](deliverables/story-v02/preview/contact-sheet.jpg)
-
-## 공통 문서
-
-| 문서 | 확인할 것 |
+| 자료 | 파일 |
 | --- | --- |
-| [CLAUDE.md](CLAUDE.md) | 이야기·문구·디자인·시간·수정·Git 작업의 공통 지침 |
-| [사실과 필요한 원본](docs/03-facts-and-assets.md) | 확인된 역할·프로그램·일정과 IMG01–IMG17 |
-| [외부 참고와 출처](docs/04-web-references.md) | 공식 배경 자료·외부 사진의 용도와 권리 |
-| [15초 AI 소개 브리프](docs/07-ai-intro-brief.md) | 회사 오프닝과 본편 사이의 별도 영상 제작 |
+| 발표 자료 | [PPTX](deliverables/balance-v03/learning-fair-2026-balance-v03.pptx) · [PDF](deliverables/balance-v03/learning-fair-2026-balance-v03.pdf) |
+| 촬영 문서 | [대본](docs/balance-v03/02-script.md) · [콘티](docs/balance-v03/01-storyboard.md) · [프롬프터](deliverables/balance-v03/teleprompter.txt) |
+| 선택 전·A·B 화면 | [PPTX 9장](deliverables/balance-v03/choice-states.pptx) · [PDF](deliverables/balance-v03/choice-states.pdf) |
+| 제작 준비 | [자료 삽입·선택 변경·영상팀 전달](docs/balance-v03/04-handoff.md) · [리허설 CSV](deliverables/balance-v03/rehearsal.csv) |
+| 검증 | [시간 추정](deliverables/balance-v03/timing-report.json) · [파일 검증](deliverables/balance-v03/validation-report.json) |
 
-AGENTS.md는 공통 지침으로 안내하는 진입점이다. 별도 인계·콘셉트 비교·버전 목록은 위 문서에 통합했다.
+![밸런스 게임 미리보기](deliverables/balance-v03/preview/contact-sheet.jpg)
 
-## 현재 상태와 다음 작업
+## 이야기와 시간
 
-두 안 모두 **본편 275초 + 고정 영상 25초 = 300초**다. IAP는 18초의 Tech X 대표 사례다. 이관우의 GPU 과제 경험과 별개다. PPT 본편 10장·숨김 부록 3장, 실제 PowerPoint PDF·PNG가 있다. [흐름형 검증](deliverables/story-v02/validation-report.json) · [월드컵 검증](deliverables/worldcup-v02/validation-report.json).
+**누구에게 배울까 → 어떤 일에 도전할까 → 동료의 일을 어떻게 이해할까 → 다른 팀과 무엇을 나눌까.** 각 질문의 선택 이유를 듣고 실제 세미나·참여 경험·업무 변화·교류 장면으로 이어진다. 우승자를 정하지 않으며, 팀장님의 선택은 촬영용 제안이다.
 
-발화·호흡·고정 영상의 느린 추정은 흐름형 **262.34초**, 월드컵형 **271.56초**다. 실제 낭독 실측은 아직 없다. 자료·대본·콘티·타임라인은 준비됐으며 실제 촬영·최종 편집은 남아 있다.
+회사 오프닝 5초 → 스튜디오 오프닝 20초 → 별도 AI 팀 소개 15초 → 나머지 본편 255초 → 회사 클로징 5초, 총 **300초**다. 본편은 10장·275초이며 검토용 숨김 부록은 3장이다. 선택 화면은 본편 장면 안에서 교체한다.
 
-1. 사용자와 최종 형식·출연자 말투를 확인한다. 월드컵을 택하면 제안 선택도 확인한다.
-2. 실제 사진과 자료를 별도 PPTX 사본에 붙인다. **개인 사진 IMG16·IMG17은 아직 미수급**이며 흐름형 P05 / 월드컵형 P04 자리다.
-3. 10/11 기준 **OutSystems 10/12 예정 → 자료 제출 10/14 → Tech X 발표 10/16 예정 → 촬영 10/19**다. 실제 진행 확인 후 필요한 대사·자막·자료를 갱신한다.
-4. 각 `deliverables/`의 `rehearsal.csv`에 실측 시간을 기록해 자료 유지 시간과 발화를 맞춘다.
-5. 회사 KV·오프닝·클로징 원본과 별도 15초 AI 소개 영상을 준비해 영상팀에 전달한다. AI 소개는 브리프만 있고 영상 파일은 없다.
+IAP는 25초의 업무 변화 사례다. 이관우의 GPU 과제와 다른 Tech X 과제임을 명시하고, 소개·실습을 통해 나눈 과정도 담았다. 첫 질문에서는 두 출연자가 다른 선택을 하며 마지막에는 다른 팀의 경험을 듣고 싶다는 초대로 마무리한다.
+
+## 준비할 것
+
+현재 사진 삽입 전 PPT·대본·콘티를 준비했다. 영문·숫자의 발음을 환산하고 호흡을 포함한 느린 발화 추정은 고정 영상 포함 **265.87초**다. 실제 리허설은 아직 하지 않았다. 선택·사진·전환을 포함한 편집 목표는 300초다.
+
+1. 두 출연자의 말투·실제 선택을 확인하며 리허설한다. 선택이 바뀌면 대사·공개 큐·화면을 함께 갱신한다.
+2. 실제 사진을 별도 PPTX 사본에 넣는다. **IMG16·IMG17 개인 참여 사진은 P05**이며 아직 미수급이다.
+3. 10/11 기준 **OutSystems 10/12 예정 → 자료 제출 10/14 → Tech X 발표 10/16 예정 → 촬영 10/19**다. 진행 확인 후 필요한 상태만 갱신한다.
+4. 회사 KV·오프닝·클로징과 15초 AI 소개 영상을 준비한다. AI 소개는 브리프만 있으며 영상 파일은 없다.
+
+## 공통 기준과 이전 참고본
+
+- [CLAUDE.md](CLAUDE.md): 현재 이야기·수정·시간·Git 지침
+- [확인된 사실과 원본](docs/03-facts-and-assets.md): 프로그램·일정·IMG01–IMG17
+- [15초 AI 소개 브리프](docs/07-ai-intro-brief.md): 00:25–00:40 별도 영상
+- [외부 참고자료](docs/04-web-references.md): 이전 안의 배경 조사. 새 본편에는 시장 투자 자료나 외부 사진을 사용하지 않음
+
+[story-v02](docs/story-v02/04-handoff.md) / [worldcup-v02](docs/worldcup-v02/04-handoff.md)는 이전 참고본으로 남겨두었다. 각 안의 문서와 발표 자료는 해당 버전 안에서만 사용한다.
 
 ## 생성·렌더·검증
 
@@ -47,14 +49,12 @@ AGENTS.md는 공통 지침으로 안내하는 진입점이다. 별도 인계·�
 uv venv .venv
 uv pip install --python .venv/bin/python -r requirements.txt
 
-# 두 제작본을 각 JSON 원본에서 생성·검증한다.
-.venv/bin/python scripts/build_story_pair.py
-bash scripts/render_story_pair_slides.sh
-.venv/bin/python scripts/validate_story_pair.py
+# 현재 제작본만 생성·검증한다.
+.venv/bin/python scripts/build_balance.py
+bash scripts/render_balance_slides.sh
+.venv/bin/python scripts/validate_balance.py
 ```
 
-`uv`가 없으면 `python3 -m venv .venv`, `.venv/bin/python -m pip install -r requirements.txt`를 사용한다. 생성 코드는 `scripts/presentation_common.py`와 `scripts/production_common.py`의 공통 함수를 사용한다.
+현재 원본은 `content/balance-v03-film.json`이다. 생성 문서를 직접 고치지 않는다. 렌더는 WSL과 Windows Microsoft PowerPoint가 필요하다. 검토 PDF·1600×900 PNG에는 숨김 부록도 포함한다. 다른 환경에서는 PowerPoint에서 같은 출력 위치로 직접 내보내고 검증한다.
 
-렌더는 WSL과 설치된 Windows Microsoft PowerPoint가 필요하며 순서대로 실행한다. 다른 환경에서는 각 PPTX를 같은 폴더의 PDF와 `preview/slide-01.png`부터 **1600×900 PNG**로 내보낸다. 월드컵 선택 화면은 `choice-states.pdf`와 `choice-preview/slide-01.png`부터 6장이다. 검토 PDF·PNG에는 숨김 부록도 포함한다. 렌더할 수 없으면 새 수정본의 화면 검증 한계를 명시한다.
-
-실제 사진을 넣은 제출 사본은 생성 명령으로 덮어쓰지 않는다. 작업 결과는 기존 원격 이력을 유지하며 `main`에 커밋·푸시한다.
+이전 두 안을 재생성해야 할 때만 `build_story_pair.py` → `render_story_pair_slides.sh` → `validate_story_pair.py`를 사용한다. 사용자 사진을 넣은 제출 사본은 자동 출력과 별도 보관한다. 변경은 기존 원격 이력을 보존하며 `main`에 커밋·푸시한다.

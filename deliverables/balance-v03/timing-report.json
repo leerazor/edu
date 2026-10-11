@@ -1,0 +1,166 @@
+{
+  "basis": "Planning estimate, not a rehearsal measurement",
+  "version": "balance-v03",
+  "date": "2026-10-11",
+  "reading_rates_syllables_per_second": {
+    "slow": 4.2,
+    "baseline": 4.6,
+    "fast": 5
+  },
+  "main_allocated_seconds": 275,
+  "fixed_seconds": 25,
+  "scenes": [
+    {
+      "id": "S01",
+      "slide": "P01",
+      "raw_characters": 82,
+      "spoken_syllables": 58,
+      "pause_seconds": 3,
+      "allocated_seconds": 20,
+      "estimates_seconds": {
+        "slow": 16.81,
+        "baseline": 15.61,
+        "fast": 14.6
+      },
+      "baseline_visual_hold_seconds": 4.39
+    },
+    {
+      "id": "S02",
+      "slide": "P02",
+      "raw_characters": 119,
+      "spoken_syllables": 85,
+      "pause_seconds": 3,
+      "allocated_seconds": 25,
+      "estimates_seconds": {
+        "slow": 23.24,
+        "baseline": 21.48,
+        "fast": 20.0
+      },
+      "baseline_visual_hold_seconds": 3.52
+    },
+    {
+      "id": "S03",
+      "slide": "P03",
+      "raw_characters": 156,
+      "spoken_syllables": 119,
+      "pause_seconds": 3,
+      "allocated_seconds": 40,
+      "estimates_seconds": {
+        "slow": 31.33,
+        "baseline": 28.87,
+        "fast": 26.8
+      },
+      "baseline_visual_hold_seconds": 11.13
+    },
+    {
+      "id": "S04",
+      "slide": "P04",
+      "raw_characters": 105,
+      "spoken_syllables": 75,
+      "pause_seconds": 3,
+      "allocated_seconds": 25,
+      "estimates_seconds": {
+        "slow": 20.86,
+        "baseline": 19.3,
+        "fast": 18.0
+      },
+      "baseline_visual_hold_seconds": 5.7
+    },
+    {
+      "id": "S05",
+      "slide": "P05",
+      "raw_characters": 115,
+      "spoken_syllables": 85,
+      "pause_seconds": 2,
+      "allocated_seconds": 25,
+      "estimates_seconds": {
+        "slow": 22.24,
+        "baseline": 20.48,
+        "fast": 19.0
+      },
+      "baseline_visual_hold_seconds": 4.52
+    },
+    {
+      "id": "S06",
+      "slide": "P06",
+      "raw_characters": 125,
+      "spoken_syllables": 95,
+      "pause_seconds": 2,
+      "allocated_seconds": 25,
+      "estimates_seconds": {
+        "slow": 24.62,
+        "baseline": 22.65,
+        "fast": 21.0
+      },
+      "baseline_visual_hold_seconds": 2.35
+    },
+    {
+      "id": "S07",
+      "slide": "P07",
+      "raw_characters": 90,
+      "spoken_syllables": 65,
+      "pause_seconds": 3,
+      "allocated_seconds": 25,
+      "estimates_seconds": {
+        "slow": 18.48,
+        "baseline": 17.13,
+        "fast": 16.0
+      },
+      "baseline_visual_hold_seconds": 7.87
+    },
+    {
+      "id": "S08",
+      "slide": "P08",
+      "raw_characters": 189,
+      "spoken_syllables": 138,
+      "pause_seconds": 3,
+      "allocated_seconds": 40,
+      "estimates_seconds": {
+        "slow": 35.86,
+        "baseline": 33.0,
+        "fast": 30.6
+      },
+      "baseline_visual_hold_seconds": 7.0
+    },
+    {
+      "id": "S09",
+      "slide": "P09",
+      "raw_characters": 147,
+      "spoken_syllables": 104,
+      "pause_seconds": 3,
+      "allocated_seconds": 30,
+      "estimates_seconds": {
+        "slow": 27.76,
+        "baseline": 25.61,
+        "fast": 23.8
+      },
+      "baseline_visual_hold_seconds": 4.39
+    },
+    {
+      "id": "S10",
+      "slide": "P10",
+      "raw_characters": 89,
+      "spoken_syllables": 70,
+      "pause_seconds": 3,
+      "allocated_seconds": 20,
+      "estimates_seconds": {
+        "slow": 19.67,
+        "baseline": 18.22,
+        "fast": 17.0
+      },
+      "baseline_visual_hold_seconds": 1.78
+    }
+  ],
+  "total_spoken_syllables": 894,
+  "main_estimates_seconds": {
+    "slow": 240.87,
+    "baseline": 222.35,
+    "fast": 206.8
+  },
+  "whole_film_estimates_seconds": {
+    "slow": 265.87,
+    "baseline": 247.35,
+    "fast": 231.8
+  },
+  "iap_allocated_seconds": 25
+}
