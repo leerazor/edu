@@ -6,7 +6,8 @@
 
 | 버전 | PPT·PDF | 대본·콘티 | 상태 |
 | --- | --- | --- | --- |
-| **최신 공동 해설 editorial-v0.4** | [PPTX](../deliverables/editorial-v04/learning-fair-2026-editorial-v04.pptx) · [PDF](../deliverables/editorial-v04/learning-fair-2026-editorial-v04.pdf) | [대본](editorial-v04/02-script.md) · [콘티](editorial-v04/01-storyboard.md) | AI 지원·활용을 위해 전문성을 교류하며 성장하는 이야기. ‘서로에게 배우는 인프라 팀’. [통합 검토](editorial-v04/03-story-review.md). 기존 164개 제작 파일 보존 |
+| **최신 공동 해설 editorial-v0.5** | [PPTX](../deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PDF](../deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) | [대본](editorial-v05/02-script.md) · [콘티](editorial-v05/01-storyboard.md) | 화면은 짧은 제목과 사실, 대본은 이유와 경험으로 전면 교정. ‘함께 쌓는 전문성’. [문구 비교](editorial-v05/03-copy-review.md). 기존 194개 제작 파일 보존 |
+| 공동 해설 editorial-v0.4 | [PPTX](../deliverables/editorial-v04/learning-fair-2026-editorial-v04.pptx) · [PDF](../deliverables/editorial-v04/learning-fair-2026-editorial-v04.pdf) | [대본](editorial-v04/02-script.md) · [콘티](editorial-v04/01-storyboard.md) | AI 지원·활용을 위해 전문성을 교류하며 성장하는 이야기. ‘서로에게 배우는 인프라 팀’. [통합 검토](editorial-v04/03-story-review.md). 기존 164개 제작 파일 보존 |
 | 공동 해설 editorial-v0.3 | [PPTX](../deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PDF](../deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) | [대본](editorial-v03/02-script.md) · [콘티](editorial-v03/01-storyboard.md) | 2026-10-11 사용자 피드백 반영. 팀 역할·교류 성장 핵심 → 배우기·함께 해보기·다시 나누기. [흐름 검토](editorial-v03/03-story-review.md). 이전 제작본 모두 보존 |
 | 공동 해설 editorial-v0.2 | [PPTX](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pptx) · [PDF](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pdf) | [대본](editorial-v02/02-script.md) · [콘티](editorial-v02/01-storyboard.md) | 2026-10-11 추가 사실 반영. 이관우 참여 경험·팀장 관점·모집 방식·자료 삽입 9곳. [검토·제출 일정](editorial-v02/03-review-and-schedule.md). 리허설·실제 자료 삽입 전 |
 | **공동 해설 editorial-v0.1** | [PPTX](../deliverables/editorial/learning-fair-2026-editorial.pptx) · [PDF](../deliverables/editorial/learning-fair-2026-editorial.pdf) | [대본](editorial/02-script.md) · [콘티](editorial/01-storyboard.md) | 2026-10-11 별도 생성. ‘그 일, 같이 해볼까요?’ / [비판적 검토 기록](editorial/03-editorial-review.md). 실제 낭독·내부 원본 교체 전 |
@@ -32,3 +33,5 @@
 공동 해설 v03은 v02까지의 제작 파일 134개를 [별도 보존 기준](../deliverables/editorial-v03/preservation-baseline.json)과 [검증 보고서](../deliverables/editorial-v03/validation-report.json)로 확인한다. 공통 도입 원칙은 후속 제작에 적용하며, 이전 패키지는 당시 버전으로 보존한다.
 
 공동 해설 v04는 v03까지의 제작 파일 164개를 [별도 보존 기준](../deliverables/editorial-v04/preservation-baseline.json)과 [검증 보고서](../deliverables/editorial-v04/validation-report.json)로 확인한다. 이후 사실이나 교육 관점이 추가되어도 이전 제작본은 당시 버전으로 보존한다.
+
+공동 해설 v05는 v04까지의 제작 파일 194개를 [별도 보존 기준](../deliverables/editorial-v05/preservation-baseline.json)과 [검증 보고서](../deliverables/editorial-v05/validation-report.json)로 확인한다. 이전 버전의 문구를 소급해서 바꾸지 않는다.
