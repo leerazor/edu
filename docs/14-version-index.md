@@ -6,7 +6,8 @@
 
 | 버전 | PPT·PDF | 대본·콘티 | 상태 |
 | --- | --- | --- | --- |
-| **최신 공동 해설 editorial-v0.2** | [PPTX](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pptx) · [PDF](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pdf) | [대본](editorial-v02/02-script.md) · [콘티](editorial-v02/01-storyboard.md) | 2026-10-11 추가 사실 반영. 이관우 참여 경험·팀장 관점·모집 방식·자료 삽입 9곳. [검토·제출 일정](editorial-v02/03-review-and-schedule.md). 리허설·실제 자료 삽입 전 |
+| **최신 공동 해설 editorial-v0.3** | [PPTX](../deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PDF](../deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) | [대본](editorial-v03/02-script.md) · [콘티](editorial-v03/01-storyboard.md) | 2026-10-11 사용자 피드백 반영. 팀 역할·교류 성장 핵심 → 배우기·함께 해보기·다시 나누기. [흐름 검토](editorial-v03/03-story-review.md). 이전 제작본 모두 보존 |
+| 공동 해설 editorial-v0.2 | [PPTX](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pptx) · [PDF](../deliverables/editorial-v02/learning-fair-2026-editorial-v02.pdf) | [대본](editorial-v02/02-script.md) · [콘티](editorial-v02/01-storyboard.md) | 2026-10-11 추가 사실 반영. 이관우 참여 경험·팀장 관점·모집 방식·자료 삽입 9곳. [검토·제출 일정](editorial-v02/03-review-and-schedule.md). 리허설·실제 자료 삽입 전 |
 | **공동 해설 editorial-v0.1** | [PPTX](../deliverables/editorial/learning-fair-2026-editorial.pptx) · [PDF](../deliverables/editorial/learning-fair-2026-editorial.pdf) | [대본](editorial/02-script.md) · [콘티](editorial/01-storyboard.md) | 2026-10-11 별도 생성. ‘그 일, 같이 해볼까요?’ / [비판적 검토 기록](editorial/03-editorial-review.md). 실제 낭독·내부 원본 교체 전 |
 | 기존 기본본 v0.1 | [PPTX](../deliverables/learning-fair-2026.pptx) · [PDF](../deliverables/learning-fair-2026.pdf) | [대본](06-script.md) · [콘티](05-storyboard.md) | 2026-10-09 생성된 원본 보존. 후속 서사 검토가 자동 반영된 파일이 아님 |
 | 월드컵 추가본 v0.1 | [PPTX](../deliverables/worldcup/learning-fair-2026-worldcup.pptx) · [PDF](../deliverables/worldcup/learning-fair-2026-worldcup.pdf) | [대본](worldcup/02-script.md) · [콘티](worldcup/01-storyboard.md) | 2026-10-10 제작본 보존. 4강·결승과 Tech X 촬영용 선택안 |
@@ -26,3 +27,5 @@
 - 사용자 요청에 따라 새 검토 문서와 후속 제작 산출물도 `main`에 커밋·푸시하며 기존 이력을 보존한다.
 
 기존 파일의 내용 보존 여부는 [보존 확인 기록](../deliverables/review/version-preservation-2026-10-11.json)에 남긴다. 이 기록은 기준 커밋과 작업 파일의 바이트 일치를 확인한 것이며, 새 영상이나 새 PPT의 품질 검증 결과가 아니다.
+
+공동 해설 v03은 v02까지의 제작 파일 134개를 [별도 보존 기준](../deliverables/editorial-v03/preservation-baseline.json)과 [검증 보고서](../deliverables/editorial-v03/validation-report.json)로 확인한다. 공통 도입 원칙은 후속 제작에 적용하며, 이전 패키지는 당시 버전으로 보존한다.
