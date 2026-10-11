@@ -10,7 +10,7 @@ Run from the repository root. Install: `uv venv .venv` then `uv pip install --py
 
 ## Coding Style & Naming Conventions
 
-No formatter or linter is configured. Use Python with four-space indentation and snake_case. Use UTF-8 Korean production documents, kebab-case filenames, and source IDs P01–P10 for main slides, A01–A03 for hidden appendices, S01–S10 for scenes, IMG01–IMG14 for internal assets. External image IDs use IMG-01 etc. Maintain slide/cue/speaker/timing agreement across generated outputs. Rebuild rather than hand-edit generated storyboard, script, PPTX, teleprompter, and timing reports.
+No formatter or linter is configured. Use Python with four-space indentation and snake_case. Use UTF-8 Korean production documents, kebab-case filenames, and source IDs P01–P10 for main slides, A01–A03 for hidden appendices, S01–S10 for scenes, IMG01–IMG15 for internal assets. External image IDs use IMG-01 etc. Maintain slide/cue/speaker/timing agreement across generated outputs. Rebuild rather than hand-edit generated dialogue, storyboard, script, teleprompter, and timing reports. The user will insert actual images in a separate PPTX copy; preserve that copy from automated rebuilds.
 
 The user's 2026-10-10 direction places cross-department exchange and learning culture at the center of the film. IAP is one representative outcome, not the narrative spine. Do not use an IAP opening or frame every activity as background to IAP. Balance screen emphasis as well as speaking time. The updated review proposal in `docs/10-presenter-review.md` and `docs/11-motion-review.md` is separate from the existing v0.1 script and deck until those are regenerated.
 
@@ -24,6 +24,12 @@ The user's subsequent request to keep exploring, critically review, and improve 
 
 ## Testing Guidelines
 
+The latest package is editorial-v0.2: `content/editorial-v02-film.json`, `docs/editorial-v02/`, and `deliverables/editorial-v02/`. Build/render/validate with `scripts/build_editorial_v02_package.py`, `scripts/render_editorial_v02_slides.sh`, and `scripts/validate_editorial_v02_package.py`. It preserves 104 previously tracked production files, including editorial v01. S05 uses Lee Kwanwoo's confirmed k8s GPU resource efficiency project participation and experience learning other departments' perspectives; do not invent GPU gains or specific discussions. IMG15 is that project's material. IAP remains a different Tech X project, only S06/P06 for 35 seconds. Nine actual-material slots across seven slides are left for the user to fill.
+
+Tech X facts confirmed on 2026-10-11: team recruitment in March, one proposed topic per part, selection from interested applicants to the required headcount, projects started in April. Participants dedicate part of their time; do not infer working-hours rules or percentages. Outstanding projects are awarded and reflected in performance; no completed award result or award date is confirmed. The leader's cohesion/morale/one-team explanation is a view and purpose, not a measured result or verbatim historical quote.
+
+Production schedule as of 2026-10-11: OutSystems seminar scheduled October 12, materials submission October 14, Tech X final presentation scheduled October 16, filming October 19. Keep future events pending until confirmed. Submission precedes the final presentation; do not prewrite its results. Final presentation does not imply project completion or an award ceremony. Record confirmed later changes per scene for the video team.
+
 No general test framework or coverage target is configured. The focused validation command checks 300-second timing continuity, pronunciation-based estimates, scene cues, internal asset references, PPTX integrity/layout/notes, hidden appendices, actual PDF/PNG renders, and reference asset hashes. Inspect the contact sheet after rendering. Treat reading time as an estimate until rehearsal measurements exist; never substitute participant counts for performance gains. Add separate tests only for material new behavior that this validation does not cover.
 
 ## Commit & Pull Request Guidelines
@@ -34,4 +40,4 @@ Use concise Conventional Commits such as `feat: add learning fair production pac
 
 Keep credentials and local secrets out of version control. Provide placeholder-only example configuration when environment variables are introduced, and document required variables without exposing their values.
 
-Actual internal photos/screens are not yet supplied. Never present generic external images as this team's real facilities or events. Attribute external images with their license and source. October OutSystems is pending as of 2026-10-09 and scheduled before filming; update only after confirmation. IAP's log-pattern detection and formatted messenger broadcast are confirmed examples; expanding to all team infrastructure is a goal. Do not invent time savings, satisfaction, testimonials, root-cause analysis, or automatic incident recovery.
+Actual internal photos/screens are not yet supplied. Never present generic external images as this team's real facilities or events. Attribute external images with their license and source. October OutSystems is pending as of 2026-10-11 and scheduled for October 12; update only after confirmation. IAP's log-pattern detection and formatted messenger broadcast are confirmed examples; expanding to all team infrastructure is a goal. Do not invent time savings, satisfaction, testimonials, root-cause analysis, or automatic incident recovery.
