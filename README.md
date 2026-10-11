@@ -8,6 +8,7 @@
 
 ## 바로 보는 제작 파일
 
+- **2026-10-11 스토리라인 검토:** [월드컵에서 나열감이 생기는 이유](docs/worldcup/05-storyline-review.md) · [장면 연결과 대사 수정 제안](docs/worldcup/06-storyline-revision-proposal.md). 기존 제작 파일에 적용하지 않은 서사 제안이다. [버전별 PPT·대본·콘티 목록](docs/14-version-index.md)에서 기본본과 월드컵 초안을 모두 열 수 있다.
 - **월드컵 추가 버전:** [제작 기준](docs/worldcup/00-production-guidelines.md) · [PPTX](deliverables/worldcup/learning-fair-2026-worldcup.pptx) · [PDF](deliverables/worldcup/learning-fair-2026-worldcup.pdf) · [콘티](docs/worldcup/01-storyboard.md) · [대본](docs/worldcup/02-script.md) · [영상팀 전달](docs/worldcup/03-handoff.md). ‘다른 조직에 권하고 싶은 교류 방식은?’을 기준으로 4강·결승을 진행한다. 팀장이 질문과 선택 이유에 참여하며 IAP는 Tech X의 대표 사례 40초다. 선택 결과는 촬영용 제안이고 기존본과 별도로 보존한다.
 - **디자인·콘셉트 추천:** [게임·영화·방송·기업 11개 사례 비교](docs/12-design-concept-references.md). 오픈 스튜디오를 추천하며 협동 플레이·배움의 기록 시안과 비교한다. 정식 대본·PPTX 적용 전 제안이다.
 - **진행 형식 추가 검토:** [이상형 월드컵·티어메이커와 상황별 교육 픽](docs/13-selection-show-format.md). 선택의 재미를 교류 경험 설명으로 연결하는 방법을 비교한다.
@@ -60,6 +61,7 @@
 | [11 애니메이션 검토](docs/11-motion-review.md) | 발화에 필요한 모션·전환·시간 포함 관계 확인 |
 | [12 디자인·콘셉트 사례](docs/12-design-concept-references.md) | 공식 사례 11개와 자체 시안 3개를 비교해 연출 방향 검토 |
 | [13 선택형 진행](docs/13-selection-show-format.md) | 월드컵·티어메이커의 장단점과 상황별 선택 대화 검토 |
+| [14 버전 보존](docs/14-version-index.md) | 기본본·월드컵의 PPT·대본·콘티를 함께 찾고 개정본의 별도 저장 원칙 확인 |
 
 ## 파일 구조
 

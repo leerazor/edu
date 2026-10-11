@@ -1,0 +1,365 @@
+{
+  "date": "2026-10-11",
+  "baseline_commit": "86007d110858f7cf9f75c6b026f969495daed5b9",
+  "scope": "Existing production packages, sources, generated scripts/storyboards, renders, references, and build helpers; editorial review additions excluded",
+  "status": "PASS",
+  "checked_files": 71,
+  "changed_or_missing": [],
+  "files": [
+    {
+      "file": "assets/references/cpu-liquid-cooling-cc-by-sa-4.jpg",
+      "unchanged": true,
+      "baseline_sha256": "16e9e8eb36423993e2928ddd86b06c0c4ec44e1df4dcf78af74123f6a787d736"
+    },
+    {
+      "file": "assets/references/manifest.json",
+      "unchanged": true,
+      "baseline_sha256": "eb30105d7b11ac0e041395361acc4f0eca9b16282d70d79a0aef3452f1de8a67"
+    },
+    {
+      "file": "assets/references/nersc-server-racks-cc0.jpg",
+      "unchanged": true,
+      "baseline_sha256": "5555cef940402c6e2f7e61236af44c620acb7a906febdf67a613ad178b33ed0e"
+    },
+    {
+      "file": "assets/references/server-air-cooling-cc0.jpg",
+      "unchanged": true,
+      "baseline_sha256": "3933026eed5cd7d14c27f611897c34df94ced7a6fd4d34ea36c247fdb4127c7c"
+    },
+    {
+      "file": "content/film.json",
+      "unchanged": true,
+      "baseline_sha256": "6d834d76206610926ffbe8b4d850e7b852f54d6ebf9873460473ea0b850109dd"
+    },
+    {
+      "file": "content/worldcup-film.json",
+      "unchanged": true,
+      "baseline_sha256": "ffc1f4ad43246154c1ff254c24039065da6e1a4a0b6237b3c820f3965391c5e5"
+    },
+    {
+      "file": "deliverables/learning-fair-2026.pdf",
+      "unchanged": true,
+      "baseline_sha256": "761310e8ef432b84bfa1e88459c6f1c2bea7177637af161e8a6b70cfcb7cface"
+    },
+    {
+      "file": "deliverables/learning-fair-2026.pptx",
+      "unchanged": true,
+      "baseline_sha256": "e3a458c78ed592185cbde8aca19f14a3c52439e43c7ba00d704fa5326d37dffa"
+    },
+    {
+      "file": "deliverables/preview/contact-sheet.jpg",
+      "unchanged": true,
+      "baseline_sha256": "32b59ed54de2bd899765e6051fd2846c2de87f710bc77f95fa6a89df39b51300"
+    },
+    {
+      "file": "deliverables/preview/slide-01.png",
+      "unchanged": true,
+      "baseline_sha256": "fe619ce954ed5a5082bcaa210a8ece09f3b67d73725bdc1e9418a3e84d518065"
+    },
+    {
+      "file": "deliverables/preview/slide-02.png",
+      "unchanged": true,
+      "baseline_sha256": "4f75b6b8524559016791418fb28aa3dc905fa336e035535a60aa92ebdfc67aea"
+    },
+    {
+      "file": "deliverables/preview/slide-03.png",
+      "unchanged": true,
+      "baseline_sha256": "db85e76def8dd9668067fc93abe9dd7829731f663929776357cb8b8bf5c45d95"
+    },
+    {
+      "file": "deliverables/preview/slide-04.png",
+      "unchanged": true,
+      "baseline_sha256": "66af863fbd1d8847447d5fce1a21b622aaa77a5e0ebfdaad100c27d1d7a6f6f6"
+    },
+    {
+      "file": "deliverables/preview/slide-05.png",
+      "unchanged": true,
+      "baseline_sha256": "00002fa5c479c6027248aed3d16914edb7dacd3f99671b56c7886d4105a8032b"
+    },
+    {
+      "file": "deliverables/preview/slide-06.png",
+      "unchanged": true,
+      "baseline_sha256": "dc71e89e27085bd5b73ba51a33f44c378395400a87515e9095e3d168bcd6e282"
+    },
+    {
+      "file": "deliverables/preview/slide-07.png",
+      "unchanged": true,
+      "baseline_sha256": "98387f37f100710e6e9b7a3576cc122631b7bcb6648c1c66b49f64878b005192"
+    },
+    {
+      "file": "deliverables/preview/slide-08.png",
+      "unchanged": true,
+      "baseline_sha256": "b3908e4e7bc6be93da4c9a0f2b739b3fbf63655f17e92f8ce92db9b1bf942fe3"
+    },
+    {
+      "file": "deliverables/preview/slide-09.png",
+      "unchanged": true,
+      "baseline_sha256": "ba9bf915c826b692bd5e8982a023d78a89662bd24ba319d913a1cd9d0956214e"
+    },
+    {
+      "file": "deliverables/preview/slide-10.png",
+      "unchanged": true,
+      "baseline_sha256": "8ed94217a4272b0e33d74dd953a93b2086bfe9be98573a823d9d8ece22a7fcca"
+    },
+    {
+      "file": "deliverables/preview/slide-11.png",
+      "unchanged": true,
+      "baseline_sha256": "5ed2ca704c574e40cd4a225b38d6c60ed2a30489846b060a8e624bb330f40c43"
+    },
+    {
+      "file": "deliverables/preview/slide-12.png",
+      "unchanged": true,
+      "baseline_sha256": "4edef0128f0d6d137d010e7f6ba5586599e2bb5153bfb3a0a4ae30f520789f91"
+    },
+    {
+      "file": "deliverables/preview/slide-13.png",
+      "unchanged": true,
+      "baseline_sha256": "f9737444f726cbc2069290482cc5c1e67648d03b3d3b4f3a4f64fb2a8469441d"
+    },
+    {
+      "file": "deliverables/rehearsal.csv",
+      "unchanged": true,
+      "baseline_sha256": "3e1fd4c4800f5279de4bc6fea36a8840612d2e170dc2f2c8a8794c68c78117f1"
+    },
+    {
+      "file": "deliverables/review/concept-co-op.png",
+      "unchanged": true,
+      "baseline_sha256": "648b137cab4b0e3dd7c476ff2c3088b03901cbcb2a15cc666c6e6543f12af141"
+    },
+    {
+      "file": "deliverables/review/concept-directions-validation.json",
+      "unchanged": true,
+      "baseline_sha256": "12e604584662d991c75717ddb97b6d5506c3ac32219878d514344f2bbd3dc26d"
+    },
+    {
+      "file": "deliverables/review/concept-directions.html",
+      "unchanged": true,
+      "baseline_sha256": "8b5ad6f4abdee75854b10747298555027c92d28f68635f81d1cd2b3f9da3b5ee"
+    },
+    {
+      "file": "deliverables/review/concept-learning-notes.png",
+      "unchanged": true,
+      "baseline_sha256": "6c3dacc2b75a6d202f0c8dce7165e08ab0e914ef3c6bbd0e4d0e356d26de342c"
+    },
+    {
+      "file": "deliverables/review/concept-open-studio.png",
+      "unchanged": true,
+      "baseline_sha256": "da7fe0a0a4f37b0cea06e04ba71ebae5578d16ba19aca77a365df7a7aa2d906d"
+    },
+    {
+      "file": "deliverables/review/iap-motion-review.html",
+      "unchanged": true,
+      "baseline_sha256": "bd0bce3e1f9a651b894ace6809a76150809f80632e71cff797345b1b9b5eb1f1"
+    },
+    {
+      "file": "deliverables/review/iap-motion-still.png",
+      "unchanged": true,
+      "baseline_sha256": "45ce533e329f41e236d435d3046f1f180332b5b60082d983dbdea6f809586d1a"
+    },
+    {
+      "file": "deliverables/teleprompter.txt",
+      "unchanged": true,
+      "baseline_sha256": "c31ae9bc2466868cc6efb257d5025bfc76672159d61e11df3f0a6c06bcb9f3cc"
+    },
+    {
+      "file": "deliverables/timing-report.json",
+      "unchanged": true,
+      "baseline_sha256": "32f448c7d41f1672a74feeae897b6f000f78201d8d59d5a7fd3c704b0bcc43f4"
+    },
+    {
+      "file": "deliverables/validation-report.json",
+      "unchanged": true,
+      "baseline_sha256": "875ecf0a989a2c01b642db1e4ab85bc70f3a07bb451b7cd3512508d91a66b94d"
+    },
+    {
+      "file": "deliverables/worldcup/choice-preview/slide-01.png",
+      "unchanged": true,
+      "baseline_sha256": "5cf4f1fad5a0c44dfd2988a375fcf27e0c4dc3d5c667abdcbee23f73b7daa990"
+    },
+    {
+      "file": "deliverables/worldcup/choice-preview/slide-02.png",
+      "unchanged": true,
+      "baseline_sha256": "eb8286d12d258320801854ad5cb6b14877a86e8e8f1bf4fde852432c3e9d4406"
+    },
+    {
+      "file": "deliverables/worldcup/choice-states.pdf",
+      "unchanged": true,
+      "baseline_sha256": "dffd39ab46f2283cb9e6e1ee74fba5c5f844aa4d938ef9191d960837f0f84093"
+    },
+    {
+      "file": "deliverables/worldcup/choice-states.pptx",
+      "unchanged": true,
+      "baseline_sha256": "c2f4651cfc01ac1ee636c036d205ddb3e3da83c78c7712d4ca7782575ee5d84d"
+    },
+    {
+      "file": "deliverables/worldcup/learning-fair-2026-worldcup.pdf",
+      "unchanged": true,
+      "baseline_sha256": "3cefc8a83f046c6e1bd39808e6862411843e00e34c68519ac7710f9f07310261"
+    },
+    {
+      "file": "deliverables/worldcup/learning-fair-2026-worldcup.pptx",
+      "unchanged": true,
+      "baseline_sha256": "df623d0a6c1195337c07720833f7c5a2aafe9751fb5334f6b1697506348ce80e"
+    },
+    {
+      "file": "deliverables/worldcup/preview/contact-sheet.jpg",
+      "unchanged": true,
+      "baseline_sha256": "fb6d6c3aafa691534ac664265869d346530d07e85d6f0dbfdd58f1a0834be91e"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-01.png",
+      "unchanged": true,
+      "baseline_sha256": "7cecf6022b6b58c778f63316d3b5bf7df49ce7bd443ce7492e46265fb6c30fd8"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-02.png",
+      "unchanged": true,
+      "baseline_sha256": "6976d23afe88bbd23796ae041932ce9bba8a168a2cfcbba9f1e1feef2dd92257"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-03.png",
+      "unchanged": true,
+      "baseline_sha256": "047e8a50b915d65a2dbad39bce6507f9121edd0f4148f44929657c5f03d8596d"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-04.png",
+      "unchanged": true,
+      "baseline_sha256": "a3d11beb55ebb9145658a8182016567d61c534f0a6565748cb08217164fad3c8"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-05.png",
+      "unchanged": true,
+      "baseline_sha256": "c71766774500d0d46172b502ce3f3adb864e299f54b0960d966439e0c763496e"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-06.png",
+      "unchanged": true,
+      "baseline_sha256": "cd7a6287f6d935c0e11d8d5db0d1e95647aaad4f3fa59b6559170a048b65020f"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-07.png",
+      "unchanged": true,
+      "baseline_sha256": "ba773bf4a5a994d9eb87b86e5289e4fecfbaf75b7d6925d3a6d64c31ecb577e0"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-08.png",
+      "unchanged": true,
+      "baseline_sha256": "eb8286d12d258320801854ad5cb6b14877a86e8e8f1bf4fde852432c3e9d4406"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-09.png",
+      "unchanged": true,
+      "baseline_sha256": "656f37751bdd8f2c07eea9fd0278d217435ae07ca7f8ceffb873986bfd6c65cf"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-10.png",
+      "unchanged": true,
+      "baseline_sha256": "11b87eb214ea8a9afa4b733af944e09fd7f92ced37fc37d7bfa9a113f1acacf8"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-11.png",
+      "unchanged": true,
+      "baseline_sha256": "ef1a63ad62b726da1f6f7ffdad1cad79647d19c37d2d86a3aca55b5379400e34"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-12.png",
+      "unchanged": true,
+      "baseline_sha256": "8a9e5c3058242c7bd61fcbc21763c2d4b5de818fad3dba2c14203889c2f122f3"
+    },
+    {
+      "file": "deliverables/worldcup/preview/slide-13.png",
+      "unchanged": true,
+      "baseline_sha256": "979b1b49513f134ceef3b9aec68abb42e7160e8a893e42250b4beba4930f3ee2"
+    },
+    {
+      "file": "deliverables/worldcup/rehearsal.csv",
+      "unchanged": true,
+      "baseline_sha256": "c5d33789dd66f7ed77e16b02e20f90f795b22d22139d85a2f03e9759a0f46572"
+    },
+    {
+      "file": "deliverables/worldcup/teleprompter.txt",
+      "unchanged": true,
+      "baseline_sha256": "c630a67b15cc9358027eccbc399969f1521d4514274dd7e45045fc1e42ce1e9d"
+    },
+    {
+      "file": "deliverables/worldcup/timing-report.json",
+      "unchanged": true,
+      "baseline_sha256": "aef6c277188769e20cba01f9c3692b82498d334689566e76cdbb6da999a82094"
+    },
+    {
+      "file": "deliverables/worldcup/validation-report.json",
+      "unchanged": true,
+      "baseline_sha256": "55245faee8da5a85bc7783b04130fa823ce4c32acf08e345cc4f7c0b58060047"
+    },
+    {
+      "file": "docs/05-storyboard.md",
+      "unchanged": true,
+      "baseline_sha256": "9a56712206d11d8ae6a3e19eaf6ca078d20fcd5f7fe7b8653880b11b49ac97e5"
+    },
+    {
+      "file": "docs/06-script.md",
+      "unchanged": true,
+      "baseline_sha256": "377541e11fcdfc843672f829d93c7a1dea590316d0e08fb4495e321de36ffe81"
+    },
+    {
+      "file": "docs/worldcup/00-production-guidelines.md",
+      "unchanged": true,
+      "baseline_sha256": "f89fefb034be09aa3602601c02a448dea209eebbbf6d3ad5b9a4087f49eccb77"
+    },
+    {
+      "file": "docs/worldcup/01-storyboard.md",
+      "unchanged": true,
+      "baseline_sha256": "2448f1d7eb8c710c6c33555b9054158d699209e73ca8f6142857f06105116f6b"
+    },
+    {
+      "file": "docs/worldcup/02-script.md",
+      "unchanged": true,
+      "baseline_sha256": "2c1a3f6a4bed41e6bbf5fb0e16fc4a0d85329f250d5672e51cb10f8101fe38af"
+    },
+    {
+      "file": "docs/worldcup/03-handoff.md",
+      "unchanged": true,
+      "baseline_sha256": "aba3125970d8f2b171741e93cd270cb855465b08453d83ea11b77a1b1396393b"
+    },
+    {
+      "file": "docs/worldcup/04-validation.md",
+      "unchanged": true,
+      "baseline_sha256": "f4ce2f790ae6809d59d725b7e4926da7aa90b007da73277d9b765eaebdc95550"
+    },
+    {
+      "file": "scripts/build_package.py",
+      "unchanged": true,
+      "baseline_sha256": "4a4e87ae952de9ae7c83ec6ed8c9742c31d7d7b167198e11273e0c424c0f975c"
+    },
+    {
+      "file": "scripts/build_worldcup_package.py",
+      "unchanged": true,
+      "baseline_sha256": "251e2538d421ed77ae819a73566c547805fc46586ba454279e7288aae29d74c9"
+    },
+    {
+      "file": "scripts/export_powerpoint.ps1",
+      "unchanged": true,
+      "baseline_sha256": "6a3a2a77219ca7d76c44f022eb319bcbf622af37da0155065efa725d1cb45e05"
+    },
+    {
+      "file": "scripts/render_slides.sh",
+      "unchanged": true,
+      "baseline_sha256": "cc88503eacfac506e31fbda374e917727c873b32b397d456387d192dc39d3f60"
+    },
+    {
+      "file": "scripts/render_worldcup_slides.sh",
+      "unchanged": true,
+      "baseline_sha256": "62ce1e1ea18c163a764fb7d43082cd6ec4b0623095a274e207012bf78ebd4fbd"
+    },
+    {
+      "file": "scripts/validate_package.py",
+      "unchanged": true,
+      "baseline_sha256": "16c5be880d21a058b087fda7a34432d8e3f25825856b3a409bbc9d301d71a536"
+    },
+    {
+      "file": "scripts/validate_worldcup_package.py",
+      "unchanged": true,
+      "baseline_sha256": "c3af6a4b46909c484403c9c4abcb1a98b2cf7a72a11acd02964307ca501b4bb8"
+    }
+  ]
+}
