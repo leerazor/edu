@@ -1,6 +1,6 @@
 # 2026 Learning Fair — AI 4 AI
 
-Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영상 제작 프로젝트다. 출연은 **류경동 팀장·이관우 교육담당**이다. 최신 별도 제작안은 **「AI 4 AI — 그 일, 같이 해볼까요?」**이며 기존 기본본과 월드컵본도 보존한다.
+Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영상 제작 프로젝트다. 출연은 **류경동 팀장·이관우 교육담당**이다. 최신 별도 제작안은 **「AI 4 AI — 서로에게 배우는 인프라 팀」**이며 기존 기본본과 월드컵본도 보존한다.
 
 > 이 문서에서 해야 할 일: 콘셉트와 검토용 제작 패키지를 확인하고, 문서별 지시에 따라 내부 원본 확보·리허설·촬영·편집을 진행한다.
 
@@ -8,7 +8,8 @@ Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영�
 
 ## 바로 보는 제작 파일
 
-- **2026-10-11 최신 공동 해설 v03:** [PPTX](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PowerPoint PDF](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) · [대본](docs/editorial-v03/02-script.md) · [콘티](docs/editorial-v03/01-storyboard.md). **팀 역할과 교육문화의 핵심부터 설명**한다. DS부문 인프라 책임·AI 활용 운영 효율화 → 배우다 → 함께 해보다 → 다시 나누다. 팀 규모 강조를 빼고 AI 4 AI 세미나를 앞쪽으로 옮겼다. [흐름 검토](docs/editorial-v03/03-story-review.md) · [새 자료 삽입표](docs/editorial-v03/04-handoff.md).
+- **2026-10-11 최신 공동 해설 v04:** [PPTX](deliverables/editorial-v04/learning-fair-2026-editorial-v04.pptx) · [PowerPoint PDF](deliverables/editorial-v04/learning-fair-2026-editorial-v04.pdf) · [대본](docs/editorial-v04/02-script.md) · [콘티](docs/editorial-v04/01-storyboard.md). **AI를 잘 지원하고 활용하기 위해 서로의 전문성을 배우며 성장한다**는 관계로 묶었다. GPU 과제의 실제 참여 경험과 별도 IAP 사례로 기술·교류·성장을 구체화한다. [통합 서사 검토](docs/editorial-v04/03-story-review.md) · [자료 삽입·전달 안내](docs/editorial-v04/04-handoff.md).
+- **보존된 공동 해설 v03:** [PPTX](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PowerPoint PDF](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) · [대본](docs/editorial-v03/02-script.md) · [콘티](docs/editorial-v03/01-storyboard.md). **팀 역할과 교육문화의 핵심부터 설명**한다. DS부문 인프라 책임·AI 활용 운영 효율화 → 배우다 → 함께 해보다 → 다시 나누다. 팀 규모 강조를 빼고 AI 4 AI 세미나를 앞쪽으로 옮겼다. [흐름 검토](docs/editorial-v03/03-story-review.md) · [새 자료 삽입표](docs/editorial-v03/04-handoff.md).
 - **보존된 공동 해설 v02:** [PPTX](deliverables/editorial-v02/learning-fair-2026-editorial-v02.pptx) · [실제 PowerPoint PDF](deliverables/editorial-v02/learning-fair-2026-editorial-v02.pdf) · [대본](docs/editorial-v02/02-script.md) · [콘티](docs/editorial-v02/01-storyboard.md). **이관우님의 k8s GPU 과제 참여 경험**, 팀장님의 교류에 대한 관점, Tech X의 모집·운영 방식을 반영했다. IAP는 별도 과제의 대표 사례 35초다. 실제 자료를 붙일 자리 9곳을 표시했다. [자료 삽입·영상팀 전달](docs/editorial-v02/04-handoff.md)과 [비판적 검토·10월 14일 제출 일정](docs/editorial-v02/03-review-and-schedule.md)을 확인한다.
 - **보존된 공동 해설 v01:** [PPTX](deliverables/editorial/learning-fair-2026-editorial.pptx) · [PDF](deliverables/editorial/learning-fair-2026-editorial.pdf) · [대본](docs/editorial/02-script.md) · [콘티](docs/editorial/01-storyboard.md). 추가 경험을 제공받기 전 제작본이다. [대안 비교와 검토 기록](docs/editorial/03-editorial-review.md)도 보존한다.
 - **2026-10-11 제작 전 방향 판단:** [유튜브 비교 후 추천·도입·연결 예시](docs/17-format-decision.md). 당시 ‘AI 4 AI — 서로의 일이 배움이 되다’를 추천한 기록이다. 이후 실제 대사 비교와 비판적 검토를 거쳐 위 제작본에서 순서·제목·시간·화면을 수정했다.
@@ -27,15 +28,17 @@ Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영�
 - [발음 표기 프롬프터](deliverables/teleprompter.txt)
 - [영상팀 전달 안내](docs/08-handoff.md)
 
-![최신 공동 해설 v03 미리보기](deliverables/editorial-v03/preview/contact-sheet.jpg)
+![최신 공동 해설 v04 미리보기](deliverables/editorial-v04/preview/contact-sheet.jpg)
 
 ## 공동 해설 개정본
 
-첫 35초에 DS부문의 모든 인프라를 책임지고 AI로 운영도 효율화하는 팀의 역할과, 교류하며 함께 성장하는 교육문화의 핵심을 설명한다. 이후 AI 4 AI·Job Fair·DCIS는 ‘배우다’, Tech X·개인 경험·대표 사례 IAP는 ‘함께 해보다’, 소개·실습·녹화 공유는 ‘다시 나누다’의 근거로 이어진다. 이 순서는 교육문화의 설명 구조이며 활동의 발생 순서나 직접 인과가 아니다.
+v04는 AI 4 AI와 교류·성장을 한 관계로 묶는다. **AI 인프라와 AI를 활용하는 운영을 발전시키기 위해 서로의 전문성을 배우고 함께 시도한다.** 도입에서 그 이유를 설명하고, 개인 GPU 과제 경험에서 기술 관심과 다른 부서의 관점 학습이 만난다. IAP는 별도 과제의 AI 운영 적용 사례다. 소개·실습·녹화 공유를 거쳐 AI를 지원하고 활용할 역량을 함께 키워가겠다는 방향으로 마무리한다.
 
-본편 10장과 숨김 부록 3장이다. 시간 배정은 275초+고정 영상 25초이며, 대본은 981음절이다. 호흡을 포함한 느린 발화 추정은 본편 약 253초, 고정 영상 포함 약 278초다. 출연자 실측은 아니다. [검증 보고서](deliverables/editorial-v03/validation-report.json)는 대사·큐·자료 삽입 영역·PPT 노트·실제 렌더와 기존 제작 파일 134개의 보존을 확인한다.
+Job Fair·DCIS는 동료의 업무를 이해하는 접점이며 AI 전용 교육으로 재분류하지 않는다. 특정 세미나가 GPU 과제나 IAP를 만들었다는 인과도 주장하지 않는다. [통합 서사 검토](docs/editorial-v04/03-story-review.md)에 채택·제외한 연결을 기록했다.
 
-재생성: `.venv/bin/python scripts/build_editorial_v03_package.py` → `bash scripts/render_editorial_v03_slides.sh` → `.venv/bin/python scripts/validate_editorial_v03_package.py`. 사진은 PPT 사본에 붙여 자동 재생성 때 덮어쓰지 않도록 한다. 이전 제작본의 생성 명령과 구분한다.
+본편 10장과 숨김 부록 3장이다. 본편 275초+고정 영상 25초, 대본은 988음절이다. 호흡을 포함한 느린 발화 추정은 본편 약 254초, 고정 영상 포함 약 279초다. 출연자 실측은 아니다. [검증 보고서](deliverables/editorial-v04/validation-report.json)는 대사·큐·자료 삽입 영역·PPT 노트·실제 렌더와 기존 제작 파일 164개의 보존을 확인한다.
+
+재생성: `.venv/bin/python scripts/build_editorial_v04_package.py` → `bash scripts/render_editorial_v04_slides.sh` → `.venv/bin/python scripts/validate_editorial_v04_package.py`. 사진은 PPT 사본에 붙여 자동 재생성 때 덮어쓰지 않도록 한다.
 
 일정은 **10/12 OutSystems 예정 → 10/14 자료 제출 → 10/16 Tech X 최종 발표 예정 → 10/19 촬영**이다. 제출본에는 최종 발표나 시상 결과를 미리 넣지 않는다. 실제 진행 확인 후 필요한 변경만 영상팀에 전달한다.
 
@@ -81,9 +84,12 @@ Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영�
 | [15 방송 형식 추천](docs/15-broadcast-format-recommendations.md) | 방송 형식 4개를 비교하고 한 가지 고민을 끝까지 푸는 2인 토크의 질문·사례·결말 검토 |
 | [16 유튜브 형식 비교](docs/16-youtube-format-comparison.md) | 국내외 13개 후보의 진행 원리·제작 조건·출처를 비교하고 기존 상담형과 설정 없는 설명형도 함께 재검토 |
 | [17 최종 형식 판단](docs/17-format-decision.md) | 공동 해설 추천의 이유·도입·장면 연결·화면 원칙을 검토하고 별도 제작본의 기준으로 사용 |
-| [최신 v03 지침](docs/editorial-v03/00-production-guidelines.md) | 팀 역할·문화 핵심을 먼저 제시하고 사례를 연결하는 기준 확인 |
-| [최신 v03 흐름 검토](docs/editorial-v03/03-story-review.md) | 도입·장면 연결·결말 회수와 남은 한계 확인 |
-| [최신 v03 전달](docs/editorial-v03/04-handoff.md) | 순서가 바뀐 자료 9곳의 삽입 위치와 촬영 큐 확인 |
+| [최신 v04 지침](docs/editorial-v04/00-production-guidelines.md) | AI 지원·활용의 방향과 전문성 교류·성장의 관계를 같은 기준으로 적용 |
+| [최신 v04 통합 검토](docs/editorial-v04/03-story-review.md) | 두 서사 대안, 채택 이유와 실제 경험·적용·공유의 연결 검토 |
+| [최신 v04 전달](docs/editorial-v04/04-handoff.md) | 새 제목·도입·자료 삽입·촬영 큐 확인 |
+| [보존 v03 지침](docs/editorial-v03/00-production-guidelines.md) | 팀 역할·문화 핵심을 먼저 제시하고 사례를 연결하는 기준 확인 |
+| [보존 v03 흐름 검토](docs/editorial-v03/03-story-review.md) | 도입·장면 연결·결말 회수와 남은 한계 확인 |
+| [보존 v03 전달](docs/editorial-v03/04-handoff.md) | 순서가 바뀐 자료 9곳의 삽입 위치와 촬영 큐 확인 |
 | [공동 해설 v02 지침](docs/editorial-v02/00-production-guidelines.md) | 실제 경험·팀장 관점·시제·자료 삽입 기준 확인 |
 | [공동 해설 v02 검토·일정](docs/editorial-v02/03-review-and-schedule.md) | 새 정보가 서사를 어떻게 바꿨는지, 제출 이후 결과를 언제 반영할지 확인 |
 | [공동 해설 v02 전달](docs/editorial-v02/04-handoff.md) | 9개 자료 영역에 실제 원본 삽입 후 영상팀에 전달 |
@@ -99,18 +105,21 @@ content/film.json     발화·시간·자료 큐의 기준 데이터
 content/worldcup-film.json  월드컵 추가 버전의 발화·대진·선택·자료 큐
 content/editorial-film.json 공동 해설 개정본의 발화·자료·화면·시간 원본
 content/editorial-v02-film.json 실제 참여 경험·자료 삽입·제출 일정 반영 원본
-content/editorial-v03-film.json 팀 역할·교육문화 핵심을 먼저 제시하는 최신 원본
+content/editorial-v03-film.json 팀 역할·교육문화 핵심을 먼저 제시한 원본
+content/editorial-v04-film.json AI 4 AI·교류·성장을 한 관계로 묶은 최신 원본
 docs/worldcup/        월드컵 제작 기준·콘티·대본·전달
 docs/editorial/       공동 해설 지침·콘티·대본·비판적 검토·전달
 docs/editorial-v02/   공동 해설 v02 보존
-docs/editorial-v03/   최신 공동 해설 지침·콘티·대본·흐름 검토·전달
+docs/editorial-v03/   공동 해설 v03 보존
+docs/editorial-v04/   최신 공동 해설 지침·콘티·대본·통합 서사 검토·전달
 assets/references/   외부 시각 참고 원본·출처·라이선스
 deliverables/        PPTX·PDF·프롬프터·리허설 CSV·검수 보고서
 deliverables/preview/ PowerPoint에서 렌더한 실제 장표 PNG·전체 미리보기
 deliverables/worldcup/ 월드컵 PPTX·실제 렌더·프롬프터·리허설·검수
 deliverables/editorial/ 공동 해설 PPTX·실제 렌더·프롬프터·리허설·검수
 deliverables/editorial-v02/ 공동 해설 v02 보존
-deliverables/editorial-v03/ 최신 공동 해설 PPTX·실제 렌더·프롬프터·리허설·검수
+deliverables/editorial-v03/ 공동 해설 v03 보존
+deliverables/editorial-v04/ 최신 공동 해설 PPTX·실제 렌더·프롬프터·리허설·검수
 scripts/             자료 재생성·실제 렌더·구조/일치 검수
 ```
 
