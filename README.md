@@ -1,21 +1,40 @@
 # 2026 Learning Fair — AI 4 AI
 
-Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영상 제작 프로젝트다. 출연은 **류경동 팀장·이관우 교육담당**이다. **현재 이야기·화면 구성의 기준은 초안 「AI 4 AI — 연결이 성장의 인프라가 되다」**다. 마지막 생성본은 공동 해설 v05이며 모든 제작본을 보존한다.
+Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영상 제작 프로젝트다. 출연은 **류경동 팀장·이관우 교육담당**이다. **초안을 바탕으로 흐름형과 월드컵형 두 제작본을 만들었다.** 현재 추천 기준은 흐름형 「AI 4 AI — 연결이 성장의 인프라가 되다」다. 이전 모든 제작본은 보존한다.
 
 > 이 문서에서 해야 할 일: 콘셉트와 검토용 제작 패키지를 확인하고, 문서별 지시에 따라 내부 원본 확보·리허설·촬영·편집을 진행한다.
 
 밖의 지식을 배우고, 서로의 일을 이해하고, 부서를 넘어 함께 실행하며, 그 경험을 다시 나눈다. **구성원의 교류와 학습문화가 영상의 중심**이며, Tech X에서 팀 주요 미션으로 확장된 **IAP는 대표 성과 사례 중 하나**다. 서버 로그의 특정 패턴을 감지해 정해진 포맷의 메신저 알림을 자동 동보하는 실제 사례와, 팀 인프라 전반으로 확대하려는 방향을 구분한다.
 
-## 현재 검토 기준
+## 초안 기반 두 제작본
 
-2026-10-11 사용자 의견에 따라 제작본 7종의 PPT·대본과 기존 형식 제안을 다시 비교했다. **전체 흐름과 설명 도식은 초안 `learning-fair-2026.pptx`가 가장 좋다**고 판단했다. 질문 → AI 인프라와 운영의 두 역할 → 배움·이해·공동 실행·재공유 → ‘성장의 인프라’로 회수하는 구조를 기준으로 삼는다.
+2026-10-11 사용자 새 구성에 따라 **팀 역할·AI 4 AI 비전 → 외부 기술 습득 → Tech X와 실제 참여 경험 → Job Fair·DCIS의 업무 이해 → 함께 성장하는 팀**으로 이어간다. 초안의 네이비·민트·라일락, 관계 도식, 공통 진행표, 문화의 순환과 타이틀 회수를 사용했다.
 
-[전체 비교와 판단 근거](docs/18-full-version-review.md)에 버전별 장점·손실과 다음 수정 기준을 정리했다. 초안의 IAP 73초는 줄이고 이관우의 실제 GPU 참여 경험은 선별해 반영할 가치가 있다. 이번 검토에서 기존 PPT·대본을 바꾸거나 새 제작본을 생성하지 않았다.
+| 제작본 | PPT·PDF | 대본·콘티 | 확인할 것 |
+| --- | --- | --- | --- |
+| **흐름형 story-v0.2 · 추천 기준** | [PPTX](deliverables/story-v02/learning-fair-2026-story-v02.pptx) · [PDF](deliverables/story-v02/learning-fair-2026-story-v02.pdf) | [대본](docs/story-v02/02-script.md) · [콘티](docs/story-v02/01-storyboard.md) | [서사 검토](docs/story-v02/03-story-review.md) · [자료 삽입·전달](docs/story-v02/04-handoff.md) |
+| **월드컵 worldcup-v0.2 · 비교 대안** | [PPTX](deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pptx) · [PDF](deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pdf) | [대본](docs/worldcup-v02/02-script.md) · [콘티](docs/worldcup-v02/01-storyboard.md) | [선택·흐름 검토](docs/worldcup-v02/03-story-review.md) · [선택 공개·전달](docs/worldcup-v02/04-handoff.md) |
+
+도입에 DS 임직원 7만 명 이상·32개 DC·100만 코어 이상의 역할을 반영했다. 이관우의 GPU 과제 **참여 사진 1·2는 흐름형 P05, 월드컵형 P04**에 넣는다. 아직 사진 파일은 미수급이다. IAP는 두 안 모두 **18초의 짧은 Tech X 대표 사례**다. 소개·실습을 따로 늘리지 않았다.
+
+두 안 모두 본편 275초+고정 영상 25초=300초다. 느린 발화·기본 호흡과 고정 영상의 추정 합계는 흐름형 약 262초, 월드컵 약 272초다. 출연자 실측은 아니다. 실제 PowerPoint PDF·PNG, 대사·큐·자료 일치, 기존 제작 파일 224개 보존을 검증했다.
+
+월드컵의 기준은 ‘다른 조직에도 권하고 싶은 교류 방식은?’이다. AI 4 AI vs Tech X, Job Fair vs DCIS를 거쳐 Tech X vs DCIS 결승으로 이어진다. 제안 승자는 Tech X·DCIS·Tech X이며 실제 투표나 효과 순위가 아니다. [선택 전·후 6장 PPTX](deliverables/worldcup-v02/choice-states.pptx) · [PDF](deliverables/worldcup-v02/choice-states.pdf)를 공개 큐에서 교체한다.
+
+![초안 기반 흐름형 미리보기](deliverables/story-v02/preview/contact-sheet.jpg)
+
+```bash
+.venv/bin/python scripts/build_story_pair.py
+bash scripts/render_story_pair_slides.sh
+.venv/bin/python scripts/validate_story_pair.py
+```
+
+사진은 별도 PPTX 사본에 삽입한다. 이 명령은 두 새 버전만 재생성하고 이전 제작본을 덮어쓰지 않는다. [이전 7종 비교](docs/18-full-version-review.md)는 초안을 기준으로 돌아온 판단 기록이다.
 
 ## 바로 보는 제작 파일
 
-- **현재 서사·화면 기준: 초안 기본본** — [PPTX](deliverables/learning-fair-2026.pptx) · [PDF](deliverables/learning-fair-2026.pdf) · [대본](docs/06-script.md) · [콘티](docs/05-storyboard.md). 당시 제작본 그대로 보존했다. [전체 비교](docs/18-full-version-review.md).
-- **마지막 생성본 공동 해설 v05:** [PPTX](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PowerPoint PDF](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) · [대본](docs/editorial-v05/02-script.md) · [콘티](docs/editorial-v05/01-storyboard.md). **화면은 짧은 제목과 사실, 대본은 말로 전하는 이유와 경험**으로 전면 교정했다. ‘AI 4 AI — 함께 쌓는 전문성’. [문구 전후 비교](docs/editorial-v05/03-copy-review.md) · [자료 삽입·전달 안내](docs/editorial-v05/04-handoff.md).
+- **보존된 디자인·서사 기준: 초안 기본본** — [PPTX](deliverables/learning-fair-2026.pptx) · [PDF](deliverables/learning-fair-2026.pdf) · [대본](docs/06-script.md) · [콘티](docs/05-storyboard.md). 당시 제작본 그대로 보존했다. [전체 비교](docs/18-full-version-review.md).
+- **보존된 공동 해설 v05:** [PPTX](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pptx) · [PowerPoint PDF](deliverables/editorial-v05/learning-fair-2026-editorial-v05.pdf) · [대본](docs/editorial-v05/02-script.md) · [콘티](docs/editorial-v05/01-storyboard.md). **화면은 짧은 제목과 사실, 대본은 말로 전하는 이유와 경험**으로 전면 교정했다. ‘AI 4 AI — 함께 쌓는 전문성’. [문구 전후 비교](docs/editorial-v05/03-copy-review.md) · [자료 삽입·전달 안내](docs/editorial-v05/04-handoff.md).
 
 - **보존된 공동 해설 v04:** [PPTX](deliverables/editorial-v04/learning-fair-2026-editorial-v04.pptx) · [PowerPoint PDF](deliverables/editorial-v04/learning-fair-2026-editorial-v04.pdf) · [대본](docs/editorial-v04/02-script.md) · [콘티](docs/editorial-v04/01-storyboard.md). **AI를 잘 지원하고 활용하기 위해 서로의 전문성을 배우며 성장한다**는 관계로 묶었다. GPU 과제의 실제 참여 경험과 별도 IAP 사례로 기술·교류·성장을 구체화한다. [통합 서사 검토](docs/editorial-v04/03-story-review.md) · [자료 삽입·전달 안내](docs/editorial-v04/04-handoff.md).
 - **보존된 공동 해설 v03:** [PPTX](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pptx) · [PowerPoint PDF](deliverables/editorial-v03/learning-fair-2026-editorial-v03.pdf) · [대본](docs/editorial-v03/02-script.md) · [콘티](docs/editorial-v03/01-storyboard.md). **팀 역할과 교육문화의 핵심부터 설명**한다. DS부문 인프라 책임·AI 활용 운영 효율화 → 배우다 → 함께 해보다 → 다시 나누다. 팀 규모 강조를 빼고 AI 4 AI 세미나를 앞쪽으로 옮겼다. [흐름 검토](docs/editorial-v03/03-story-review.md) · [새 자료 삽입표](docs/editorial-v03/04-handoff.md).
@@ -37,11 +56,11 @@ Data Center팀의 교육문화와 실제 적용 사례를 소개하는 5분 영�
 - [발음 표기 프롬프터](deliverables/teleprompter.txt)
 - [영상팀 전달 안내](docs/08-handoff.md)
 
-![현재 기준으로 선택한 초안 미리보기](deliverables/preview/contact-sheet.jpg)
+![보존된 초안 미리보기](deliverables/preview/contact-sheet.jpg)
 
 ## 공동 해설 개정본
 
-아래는 v05의 생성 기록이다. 현재 추천 기준은 위의 초안이며, 문구 교정 완료를 전체 서사 개선으로 간주하지 않는다.
+아래는 보존된 v05의 생성 기록이다. 현재 추천은 위의 초안 기반 흐름형이며, 문구 교정 완료를 전체 서사 개선으로 간주하지 않는다.
 
 v05는 화면 제목·보조 문구·사진 자리·대본을 함께 고쳤다. ‘옆 부서의 일’, ‘부서를 넘는 프로젝트’, ‘같은 과제, 다른 관점’처럼 각 장면에서 보여줄 내용을 제목으로 썼다. 설명문과 당위형 제목, 상단·본문·대본의 불필요한 반복을 줄였다. [문구 교정 기록](docs/editorial-v05/03-copy-review.md)에서 전후를 비교할 수 있다.
 
@@ -95,6 +114,10 @@ DS부문 인프라를 책임지고 AI로 운영 업무를 효율화하는 팀의
 | [15 방송 형식 추천](docs/15-broadcast-format-recommendations.md) | 방송 형식 4개를 비교하고 한 가지 고민을 끝까지 푸는 2인 토크의 질문·사례·결말 검토 |
 | [16 유튜브 형식 비교](docs/16-youtube-format-comparison.md) | 국내외 13개 후보의 진행 원리·제작 조건·출처를 비교하고 기존 상담형과 설정 없는 설명형도 함께 재검토 |
 | [17 당시 형식 판단](docs/17-format-decision.md) | 공동 해설 추천의 이유·도입·장면 연결·화면 원칙을 검토하고 별도 제작본의 기준으로 사용 |
+| [새 흐름형 지침](docs/story-v02/00-production-guidelines.md) | 팀 미션·외부 기술·공동 경험·업무 이해를 연결하는 기준 |
+| [새 흐름형 검토](docs/story-v02/03-story-review.md) | 장면 전환과 결말의 회수, 짧은 IAP의 위치 확인 |
+| [새 월드컵 지침](docs/worldcup-v02/00-production-guidelines.md) | 같은 사실과 성장 메시지를 선택 대화로 구현 |
+| [새 월드컵 검토](docs/worldcup-v02/03-story-review.md) | 세 경기의 기준·이유·공개 화면과 남는 한계 확인 |
 | [18 전체 제작본 비교](docs/18-full-version-review.md) | 초안을 기준으로 재선정한 이유, 후속판의 장점·손실과 다음 수정 원칙 확인 |
 | [v05 생성본 지침](docs/editorial-v05/00-production-guidelines.md) | 화면 문구와 촬영 대사를 구분하고 구체적인 단어로 교정 |
 | [v05 생성본 문구 교정](docs/editorial-v05/03-copy-review.md) | 10장 제목 전후 비교와 대본 교정 근거 확인 |
@@ -122,13 +145,17 @@ content/editorial-film.json 공동 해설 개정본의 발화·자료·화면·�
 content/editorial-v02-film.json 실제 참여 경험·자료 삽입·제출 일정 반영 원본
 content/editorial-v03-film.json 팀 역할·교육문화 핵심을 먼저 제시한 원본
 content/editorial-v04-film.json AI 4 AI·교류·성장을 한 관계로 묶은 보존 원본
-content/editorial-v05-film.json 화면 문구·촬영 대사를 전면 교정한 최신 원본
+content/editorial-v05-film.json 문구 교정 제작본 보존
+content/story-v02-film.json 초안 기반 새 흐름형 원본
+content/worldcup-v02-film.json 초안 기반 새 월드컵 원본
 docs/worldcup/        월드컵 제작 기준·콘티·대본·전달
 docs/editorial/       공동 해설 지침·콘티·대본·비판적 검토·전달
 docs/editorial-v02/   공동 해설 v02 보존
 docs/editorial-v03/   공동 해설 v03 보존
 docs/editorial-v04/   공동 해설 v04 보존
-docs/editorial-v05/   최신 공동 해설 지침·콘티·대본·문구 교정 기록·전달
+docs/editorial-v05/   공동 해설 v05 보존
+docs/story-v02/       새 흐름형 지침·콘티·대본·서사 검토·전달
+docs/worldcup-v02/    새 월드컵 지침·콘티·대본·선택 검토·전달
 assets/references/   외부 시각 참고 원본·출처·라이선스
 deliverables/        PPTX·PDF·프롬프터·리허설 CSV·검수 보고서
 deliverables/preview/ PowerPoint에서 렌더한 실제 장표 PNG·전체 미리보기
@@ -137,7 +164,9 @@ deliverables/editorial/ 공동 해설 PPTX·실제 렌더·프롬프터·리허�
 deliverables/editorial-v02/ 공동 해설 v02 보존
 deliverables/editorial-v03/ 공동 해설 v03 보존
 deliverables/editorial-v04/ 공동 해설 v04 보존
-deliverables/editorial-v05/ 최신 공동 해설 PPTX·실제 렌더·프롬프터·리허설·검수
+deliverables/editorial-v05/ 공동 해설 v05 보존
+deliverables/story-v02/ 새 흐름형 PPTX·실제 렌더·프롬프터·리허설·검수
+deliverables/worldcup-v02/ 새 월드컵과 선택 전후 PPTX·실제 렌더·검수
 scripts/             자료 재생성·실제 렌더·구조/일치 검수
 ```
 

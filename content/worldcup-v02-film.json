@@ -1,0 +1,780 @@
+{
+  "official_expansion": "Advanced Infrastructure for Artificial Intelligence",
+  "total_seconds": 300,
+  "reading_rates": {
+    "slow": 4.2,
+    "baseline": 4.6,
+    "fast": 5
+  },
+  "pronunciations": {
+    "AI 4 AI": "에이아이 포 에이아이",
+    "Data Center": "데이터 센터",
+    "AIOps": "에이아이옵스",
+    "AI": "에이아이",
+    "Tech X": "테크 엑스",
+    "IAP": "아이에이피",
+    "Job Fair": "잡 페어",
+    "DCIS": "디씨아이에스",
+    "A0": "에이제로",
+    "6개": "여섯 개",
+    "44명": "마흔네 명",
+    "11개": "열한 개",
+    "25명": "스물다섯 명",
+    "3월": "삼월",
+    "6월": "유월",
+    "7월": "칠월",
+    "8월": "팔월",
+    "k8s": "쿠버네티스",
+    "GPU": "지피유",
+    "4월": "사월",
+    "DS": "디에스",
+    "Cisco": "시스코",
+    "KISTI": "키스티",
+    "6호기": "육호기",
+    "IT": "아이티",
+    "32개": "서른두 개",
+    "7만 명": "칠만 명",
+    "100만 코어": "백만 코어",
+    "DC": "데이터센터"
+  },
+  "fixed_segments": [
+    {
+      "id": "F00",
+      "name": "회사 제공 인트로",
+      "start": 0,
+      "duration": 5
+    },
+    {
+      "id": "F01",
+      "name": "AI 팀 소개 영상",
+      "start": 5,
+      "duration": 15
+    },
+    {
+      "id": "F02",
+      "name": "회사 제공 아웃트로",
+      "start": 295,
+      "duration": 5
+    }
+  ],
+  "presenters": {
+    "팀장님": "류경동 팀장",
+    "교육담당": "이관우 교육담당"
+  },
+  "schedule": {
+    "as_of": "2026-10-11",
+    "outsystems": {
+      "date": "2026-10-12",
+      "status": "scheduled"
+    },
+    "submission": {
+      "date": "2026-10-14",
+      "status": "scheduled"
+    },
+    "tech_x_final": {
+      "date": "2026-10-16",
+      "status": "scheduled"
+    },
+    "filming": {
+      "date": "2026-10-19",
+      "status": "scheduled"
+    }
+  },
+  "date": "2026-10-11",
+  "title": "AI 4 AI",
+  "subtitle": "우리 팀 성장 월드컵",
+  "source_basis": "2026-10-11까지 사용자 제공 사실과 이번 추가 지시를 반영한 별도 제작본. 7만 명 이상·32개 DC·100만 코어 이상은 사용자 확인 규모이며 내부 증빙을 독립 검증한 수치는 아니다. 실제 GPU 과제 경험은 본인 진술을 촬영용으로 다듬었다. 발표자의 의견과 선택은 촬영용 제안이며 과거 발언·실제 투표를 뜻하지 않는다. 세미나·프로젝트·업무 교류의 연결은 교육문화의 설명 순서이며 직접 인과나 연대기가 아니다. IAP는 짧은 Tech X 대표 사례다. 미제공 GPU 성과·시간 절감·수상 결과는 주장하지 않는다.",
+  "stages": [
+    "밖에서 배우다",
+    "함께 해보다",
+    "서로 이해하다",
+    "다시 나누다"
+  ],
+  "internal_scale": {
+    "users": "7만 명 이상",
+    "data_centers": "32개",
+    "compute": "100만 코어 이상",
+    "basis": "사용자 확인 2026-10-11. 내부 수치 증빙은 추후 삽입."
+  },
+  "external_sources": [
+    {
+      "id": "EXT01",
+      "title": "Microsoft FY26 Q4 실적 설명",
+      "date": "2026-07-29",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+      "use": "AI 인프라·데이터센터 확장 배경. 투자금액은 본편에서 읽거나 그래프로 만들지 않음."
+    },
+    {
+      "id": "EXT02",
+      "title": "Alphabet Q2 실적 발표 SEC 공시",
+      "date": "2026-07-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "use": "AI 인프라·컴퓨팅 투자 배경. 팀 교육 성과의 증거로 사용하지 않음."
+    }
+  ],
+  "iap_confirmed_example": "서버 로그의 특정 패턴 감지 → 지정 형식의 메신저 알림 자동 전송. 해당 수작업 대체. 전 인프라 확대는 목표.",
+  "october_seminar": "OutSystems 세미나는 2026-10-12 개최 예정. 2026-10-11 기준 미개최. 실제 개최 확인 후 상태 갱신.",
+  "version": "worldcup-v0.2",
+  "variant": "worldcup",
+  "iap_scene": "S05",
+  "tournament": {
+    "criterion": "다른 조직에도 권하고 싶은 교류 방식은?",
+    "actual_vote": false,
+    "status": "촬영용 추천안",
+    "disclaimer": "출연자의 과거 취향·실제 조사·투표·교육 효과 순위가 아닌 촬영용 추천 대사다. 모든 경기는 같은 기준으로 선택한다. IAP는 후보가 아니라 Tech X의 짧은 대표 사례다. 실제 출연자의 선택이 바뀌면 대진·대사·선택 화면을 함께 수정한다.",
+    "candidates": [
+      {
+        "id": "seminar",
+        "name": "AI 4 AI 세미나"
+      },
+      {
+        "id": "tech-x",
+        "name": "Tech X"
+      },
+      {
+        "id": "job-fair",
+        "name": "Job Fair"
+      },
+      {
+        "id": "dcis",
+        "name": "DCIS"
+      }
+    ],
+    "matches": [
+      {
+        "id": "M01",
+        "round": "준결승 1",
+        "candidates": [
+          "seminar",
+          "tech-x"
+        ],
+        "winner": "tech-x",
+        "scene": "S03",
+        "reveal_scene": "S04",
+        "reveal_anchor": "첫 번째는 Tech X로 가겠습니다."
+      },
+      {
+        "id": "M02",
+        "round": "준결승 2",
+        "candidates": [
+          "job-fair",
+          "dcis"
+        ],
+        "winner": "dcis",
+        "scene": "S06",
+        "reveal_scene": "S07",
+        "reveal_anchor": "저는 DCIS를 고르겠습니다."
+      },
+      {
+        "id": "M03",
+        "round": "결승",
+        "candidates": [
+          "tech-x",
+          "dcis"
+        ],
+        "winner": "tech-x",
+        "scene": "S08",
+        "reveal_scene": "S08",
+        "reveal_anchor": "저는 Tech X입니다."
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "slide": "P01",
+      "start": 20,
+      "duration": 31,
+      "pause_seconds": 2,
+      "chapter": "팀 역할과 규모",
+      "title": "AI를 움직이는 인프라, 인프라를 움직이는 사람.",
+      "speaker": "팀장님",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "안녕하세요. Data Center팀입니다. 저희는 DS부문 임직원 7만 명 이상이 사용하는 모든 IT 인프라를 제공하고 운영합니다. 32개 데이터센터와 100만 코어 이상의 컴퓨팅 자원, 회사 시스템 대부분이 운영되는 클라우드, AI를 위한 GPU 인프라까지 맡고 있습니다."
+        }
+      ],
+      "visual": {
+        "layout": "scale",
+        "headline": "AI를 움직이는 인프라,\n인프라를 움직이는 사람.",
+        "eyebrow": "Data Center팀 · 구축 · 제공 · 운영",
+        "stage": null,
+        "items": [
+          {
+            "value": "7만 명 이상",
+            "label": "DS부문 임직원"
+          },
+          {
+            "value": "32개 DC",
+            "label": "데이터센터"
+          },
+          {
+            "value": "100만 코어 이상",
+            "label": "컴퓨팅 자원"
+          }
+        ],
+        "bottom": "클라우드 · GPU 기반 인프라"
+      },
+      "cue": {
+        "anchor": "DS부문 임직원",
+        "effect": "P01 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "설명 중에는 자료를 멈춰 읽을 시간을 준다. 새 코너 음악·과장된 반응은 추가하지 않는다."
+    },
+    {
+      "id": "S02",
+      "slide": "P02",
+      "start": 51,
+      "duration": 35,
+      "pause_seconds": 2,
+      "chapter": "팀 비전과 공통 선택 기준",
+      "title": "AI 4 AI, 함께 성장할 방법은?",
+      "speaker": "팀장님 → 교육담당",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "AI 4 AI, AI를 위한 첨단 인프라가 저희의 비전입니다. 커지는 미션과 안정적인 운영을 함께 감당하려면, 우리도 성장해야겠죠."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "그래서 외부의 경험을 배우고 남기고, 동료의 경험을 나눕니다. 오늘은 다른 조직에도 권하고 싶은 교류 방식을 함께 골라보겠습니다."
+        }
+      ],
+      "visual": {
+        "layout": "bracket",
+        "headline": "AI 4 AI,\n함께 성장할 방법은?",
+        "eyebrow": "팀 비전 · 배움 월드컵",
+        "stage": null,
+        "criterion": "다른 조직에도 권하고 싶은 교류 방식은?",
+        "bottom": "밖의 기술 · 동료의 경험 · 서로의 업무"
+      },
+      "cue": {
+        "anchor": "AI 4 AI,",
+        "effect": "P02 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "공통 기준과 네 후보를 짧게 보여준다. 4강1은 AI 4 AI·Tech X, 4강2는 Job Fair·DCIS다. 전체 진행 규칙 해설을 더하지 않는다."
+    },
+    {
+      "id": "S03",
+      "slide": "P03",
+      "start": 86,
+      "duration": 43,
+      "pause_seconds": 2,
+      "chapter": "밖의 기술과 함께 해보는 경험",
+      "title": "새로운 기술 vs 함께 해보는 경험",
+      "speaker": "교육담당 → 팀장님",
+      "turns": [
+        {
+          "speaker": "교육담당",
+          "text": "첫 경기는 AI 4 AI 세미나와 Tech X입니다. 세미나는 매달 외부 전문가에게 최신 기술을 배우고, 녹화해 센터원들과 공유합니다. 나중에도 다시 배울 수 있죠."
+        },
+        {
+          "speaker": "팀장님",
+          "text": "Tech X는 각 파트가 과제를 제시하고, 관심 있는 동료가 지원해 다른 부서의 일을 함께 해봅니다. 3월에 모집해 4월에 시작했고, 6개 과제에 44명이 참여하고 있습니다. 저는 직접 경험할 기회를 권하고 싶습니다."
+        }
+      ],
+      "visual": {
+        "layout": "duel",
+        "headline": "새로운 기술 vs 함께 해보는 경험",
+        "eyebrow": "준결승 1 · 같은 기준으로 비교",
+        "stage": 0,
+        "match": "M01",
+        "criterion": "다른 조직에도 권하고 싶은 교류 방식은?",
+        "items": [
+          {
+            "label": "AI 4 AI 세미나",
+            "value": "외부 전문가의 최신 기술",
+            "detail": "월 1회 · 녹화·센터원 공유"
+          },
+          {
+            "label": "Tech X",
+            "value": "다른 부서 과제에 직접 참여",
+            "detail": "파트별 제안·모집·지원·선발 | 6개·44명"
+          }
+        ]
+      },
+      "cue": {
+        "anchor": "첫 경기는 AI 4 AI 세미나",
+        "effect": "P03 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [
+        "IMG02",
+        "IMG03",
+        "IMG07",
+        "IMG13"
+      ],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "두 후보의 장점을 비교하되 승자는 아직 표시하지 않는다. 실제 세미나 포스터 IMG03과 Tech X 공고 IMG07은 각 카드 영역에 덮어 넣을 수 있다. 선택 전 상태는 choice-states.pptx의 M01 선택 전 화면."
+    },
+    {
+      "id": "S04",
+      "slide": "P04",
+      "start": 129,
+      "duration": 35,
+      "pause_seconds": 2,
+      "chapter": "참여 경험을 듣고 첫 선택",
+      "title": "직접 해보니, 다른 관점이 보였습니다.",
+      "speaker": "교육담당 → 팀장님",
+      "turns": [
+        {
+          "speaker": "교육담당",
+          "text": "저도 Tech X에서 k8s의 GPU 자원 효율화 과제에 참여했습니다. 관심이 있어서 지원했는데, 다른 부서 동료들과 이야기하며 문제를 보는 여러 관점을 배웠습니다. 교육을 운영하는 저도 함께 성장하고 있습니다."
+        },
+        {
+          "speaker": "팀장님",
+          "text": "그 경험이 다른 조직에도 열리면 좋겠네요."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "네. 첫 번째는 Tech X로 가겠습니다."
+        }
+      ],
+      "visual": {
+        "layout": "photos",
+        "headline": "직접 해보니,\n다른 관점이 보였습니다.",
+        "eyebrow": "준결승 1 · 실제 참여 경험",
+        "stage": 1,
+        "body": "이관우 · k8s GPU 자원 효율화 과제",
+        "bottom": "관심으로 지원 · 다른 부서의 관점을 배우다"
+      },
+      "cue": {
+        "anchor": "저도 Tech X에서",
+        "effect": "P04 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [
+        {
+          "anchor": "다른 부서 동료들과 이야기하며",
+          "label": "P04 사진 2 강조",
+          "effect": "IMG17 사진 2 강조. 사진 1은 과제 소개 발화 위에 사용."
+        },
+        {
+          "anchor": "첫 번째는 Tech X로 가겠습니다.",
+          "label": "M01 선택 공개",
+          "effect": "choice-states.pptx M01 선택 후로 전환. 공개 전 화면은 M01 선택 전. 선택·홀드는 이 장면 시간에 포함."
+        }
+      ],
+      "assets": [
+        "IMG15",
+        "IMG16",
+        "IMG17"
+      ],
+      "asset_slots": [
+        {
+          "id": "IMG16",
+          "label": "참여 사진 1",
+          "detail": "사용자가 제공할 이관우의 k8s GPU 과제 참여 사진 1. 아직 원본 파일 미수급. 과제·참여 맥락이 보이는 부분을 사용."
+        },
+        {
+          "id": "IMG17",
+          "label": "참여 사진 2",
+          "detail": "사용자가 제공할 이관우의 같은 과제 참여 사진 2. 다른 부서와 함께 배우는 경험을 설명할 때 사용. 특정 대화·개선 수치는 만들지 않음."
+        }
+      ],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "개인 경험을 들은 뒤 선택한다. 직급에 따라 동의하는 연기가 아니라 본인이 배운 관점에 근거한 추천이다. 사진은 아직 미수급이며 사진 1·2 영역에 실제 원본을 넣는다."
+    },
+    {
+      "id": "S05",
+      "slide": "P05",
+      "start": 164,
+      "duration": 18,
+      "pause_seconds": 1,
+      "chapter": "Tech X의 짧은 대표 사례",
+      "title": "함께 만든 기술이 운영을 바꿉니다.",
+      "speaker": "팀장님",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "대표 과제인 IAP는 서버 로그의 특정 패턴을 감지해 정해진 형식으로 메신저에 알립니다. 사람이 하던 알림 업무를 대신합니다."
+        }
+      ],
+      "visual": {
+        "layout": "process",
+        "headline": "함께 만든 기술이\n운영을 바꿉니다.",
+        "eyebrow": "Tech X · 대표 프로젝트 IAP",
+        "stage": 1,
+        "items": [
+          {
+            "value": "로그 패턴 감지",
+            "label": "서버 로그"
+          },
+          {
+            "value": "지정 형식",
+            "label": "메시지 구성"
+          },
+          {
+            "value": "메신저 알림",
+            "label": "알림 수작업 대체"
+          }
+        ],
+        "bottom": "Infra Agent Platform · 확인된 운영 적용 사례"
+      },
+      "cue": {
+        "anchor": "대표 과제인 IAP는",
+        "effect": "P05 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [
+        "IMG08"
+      ],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "Tech X 사례 18초 안에서 기능과 수작업 대체만 말한다. 첫 선택 이후의 짧은 예시이며 IAP를 별도 후보로 만들지 않는다."
+    },
+    {
+      "id": "S06",
+      "slide": "P06",
+      "start": 182,
+      "duration": 31,
+      "pause_seconds": 2,
+      "chapter": "함께 일하려면 서로의 일을 알기",
+      "title": "직접 만나는 자리 vs 꾸준히 나누는 자리",
+      "speaker": "팀장님 → 교육담당",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "함께 일하려면 서로의 업무도 알아야 합니다. 두 번째 경기는 Job Fair와 DCIS입니다."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "Job Fair는 8월에 11개 부서가 부스를 열고 A0 패널로 업무를 소개했습니다. 동료에게 직접 묻는 자리였죠. DCIS에서는 매달 주요 과제와 서비스, 연구 중인 기술을 나눕니다."
+        }
+      ],
+      "visual": {
+        "layout": "duel",
+        "headline": "직접 만나는 자리 vs 꾸준히 나누는 자리",
+        "eyebrow": "준결승 2 · 서로의 업무 이해",
+        "stage": 2,
+        "match": "M02",
+        "criterion": "다른 조직에도 권하고 싶은 교류 방식은?",
+        "items": [
+          {
+            "label": "Job Fair",
+            "value": "부스에서 동료의 업무 소개",
+            "detail": "8월 · 11개 부서 · A0 패널"
+          },
+          {
+            "label": "DCIS",
+            "value": "업무·서비스·연구 기술 공유",
+            "detail": "월 1회 · 정기적인 내부 교류"
+          }
+        ]
+      },
+      "cue": {
+        "anchor": "두 번째 경기는 Job Fair",
+        "effect": "P06 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [
+        "IMG04",
+        "IMG05",
+        "IMG06"
+      ],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "업무 이해라는 같은 구간에서 직접 만남과 정기 공유를 비교한다. 첫 경기의 경험 이야기에서 동료 이해로 넘어가며, 별도 코너 오프닝은 넣지 않는다."
+    },
+    {
+      "id": "S07",
+      "slide": "P07",
+      "start": 213,
+      "duration": 21,
+      "pause_seconds": 2,
+      "chapter": "업무 공유를 이어갈 두 번째 선택",
+      "title": "업무 공유를 일상으로",
+      "speaker": "팀장님 → 교육담당",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "직접 만나는 Job Fair도 좋지만, 저는 DCIS를 고르겠습니다. 동료의 일을 매달 나누며 교류를 이어갈 수 있으니까요."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "꾸준히 이어갈 수 있다는 뜻이군요. 동의합니다."
+        }
+      ],
+      "visual": {
+        "layout": "duel",
+        "headline": "업무 공유를 일상으로",
+        "eyebrow": "준결승 2 · 선택 이유",
+        "stage": 2,
+        "match": "M02",
+        "criterion": "다른 조직에도 권하고 싶은 교류 방식은?",
+        "items": [
+          {
+            "label": "Job Fair",
+            "value": "직접 만나 업무를 알아가다",
+            "detail": "궁금한 일을 동료에게 묻다"
+          },
+          {
+            "label": "DCIS",
+            "value": "매달 서로의 일을 나누다",
+            "detail": "업무 이해를 정기적으로 이어가다"
+          }
+        ]
+      },
+      "cue": {
+        "anchor": "직접 만나는 Job Fair도 좋지만",
+        "effect": "P07 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [
+        {
+          "anchor": "저는 DCIS를 고르겠습니다.",
+          "label": "M02 선택 공개",
+          "effect": "choice-states.pptx M02 선택 후 표시. 이 대사 전에는 M02 선택 전 화면을 사용."
+        }
+      ],
+      "assets": [
+        "IMG04",
+        "IMG06"
+      ],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "Job Fair의 직접 만남을 인정하면서 정기적인 공유를 추천한다. 추천 결과를 교육 효과 순위나 팀 공식 평가로 표시하지 않는다."
+    },
+    {
+      "id": "S08",
+      "slide": "P08",
+      "start": 234,
+      "duration": 30,
+      "pause_seconds": 2,
+      "chapter": "결승과 다른 조직의 시작 방법",
+      "title": "함께 해보기 vs 꾸준히 알아가기",
+      "speaker": "교육담당 → 팀장님",
+      "turns": [
+        {
+          "speaker": "교육담당",
+          "text": "결승입니다. DCIS처럼 꾸준히 교류할 수도 있죠. 어떤 시작점을 권하시겠어요?"
+        },
+        {
+          "speaker": "팀장님",
+          "text": "저는 Tech X입니다. 관심 있는 작은 과제 하나를 열고, 다른 부서 동료가 참여하게 해보는 거죠."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "알아가는 데서 함께 해보는 경험으로 넓히자는 거네요. 저도 Tech X를 권하겠습니다."
+        }
+      ],
+      "visual": {
+        "layout": "duel",
+        "headline": "함께 해보기 vs 꾸준히 알아가기",
+        "eyebrow": "결승 · 다른 조직이 시작한다면",
+        "stage": null,
+        "match": "M03",
+        "criterion": "다른 조직에도 권하고 싶은 교류 방식은?",
+        "items": [
+          {
+            "label": "Tech X",
+            "value": "관심 과제에 부서 밖 동료 참여",
+            "detail": "작은 과제 하나부터 시작하는 제안"
+          },
+          {
+            "label": "DCIS",
+            "value": "서로의 업무를 정기적으로 공유",
+            "detail": "동료의 일을 이해하는 기회"
+          }
+        ]
+      },
+      "cue": {
+        "anchor": "결승입니다",
+        "effect": "P08 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [
+        {
+          "anchor": "저는 Tech X입니다.",
+          "label": "M03 선택 공개",
+          "effect": "choice-states.pptx M03 선택 후로 전환. 결승 소개 시 M03 선택 전 화면을 사용. 실제 도입 성과가 아닌 시작 제안."
+        }
+      ],
+      "assets": [],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "준결승 이유를 복창하지 않고 다른 조직이 시작할 과제·참여 방법을 설명한다. 최종 추천을 미리 보이지 않도록 선택 전·후 화면을 사용."
+    },
+    {
+      "id": "S09",
+      "slide": "P09",
+      "start": 264,
+      "duration": 18,
+      "pause_seconds": 2,
+      "chapter": "선택에서 문화 전체로",
+      "title": "하나의 경험에서, 함께 성장하는 문화로.",
+      "speaker": "팀장님 → 교육담당",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "오늘은 함께 해보는 기회를 골랐습니다. 외부의 기술과 동료의 경험도 꾸준히 나누고요."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "이렇게 쌓은 배움으로, 커지는 AI 인프라 미션을 함께 준비하겠습니다."
+        }
+      ],
+      "visual": {
+        "layout": "cycle",
+        "headline": "하나의 경험에서,\n함께 성장하는 문화로.",
+        "eyebrow": "전체 교육문화 · 다시 나누다",
+        "stage": 3,
+        "items": [
+          {
+            "value": "기술",
+            "label": "밖에서 배우다"
+          },
+          {
+            "value": "경험",
+            "label": "함께 해보다"
+          },
+          {
+            "value": "이해",
+            "label": "동료의 일을 알다"
+          },
+          {
+            "value": "공유",
+            "label": "다시 나누다"
+          }
+        ],
+        "bottom": "AI 인프라 미션을 준비하는 성장의 인프라"
+      },
+      "cue": {
+        "anchor": "오늘은 함께 해보는 기회를",
+        "effect": "P09 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "설명 중에는 자료를 멈춰 읽을 시간을 준다. 새 코너 음악·과장된 반응은 추가하지 않는다."
+    },
+    {
+      "id": "S10",
+      "slide": "P10",
+      "start": 282,
+      "duration": 13,
+      "pause_seconds": 1,
+      "chapter": "성장의 인프라로 마무리",
+      "title": "AI 4 AI",
+      "speaker": "팀장님 → 교육담당",
+      "turns": [
+        {
+          "speaker": "팀장님",
+          "text": "인프라를 움직이는 힘은, 함께 성장하는 사람입니다."
+        },
+        {
+          "speaker": "교육담당",
+          "text": "AI 4 AI. 연결이 성장의 인프라가 됩니다. 감사합니다."
+        }
+      ],
+      "visual": {
+        "layout": "closing",
+        "headline": "AI 4 AI",
+        "eyebrow": "우리의 성장 방식",
+        "stage": null,
+        "bottom": "연결이 성장의 인프라가 되다",
+        "detail": "류경동 팀장 · 이관우 교육담당"
+      },
+      "cue": {
+        "anchor": "인프라를 움직이는 힘은",
+        "effect": "P10 표시. 설명하는 관계와 실제 자료만 발화에 맞춰 강조한다. 전환·사진 홀드는 장면 시간 안에 포함한다."
+      },
+      "secondary_cues": [],
+      "assets": [],
+      "asset_slots": [],
+      "camera": "발화자 미디엄샷 → 자료 큐에서 장표 또는 인물·자료 분할 → 의미를 받는 대사에서 2인 화면. 첫 개인 화면에는 이름·직함 표시.",
+      "hold": "설명 중에는 자료를 멈춰 읽을 시간을 준다. 새 코너 음악·과장된 반응은 추가하지 않는다."
+    }
+  ],
+  "appendix": [
+    {
+      "id": "A01",
+      "title": "실제 자료 삽입 안내",
+      "body": "사용자가 제공할 사진·화면을 별도 PPTX 사본에 넣고 안내 글자를 제거합니다.",
+      "items": [
+        {
+          "label": "세미나",
+          "value": "IMG03 · IMG13",
+          "detail": "포스터 · 교육 플랫폼 녹화 화면"
+        },
+        {
+          "label": "Tech X",
+          "value": "IMG07 · IMG16 · IMG17",
+          "detail": "모집 공고 · 이관우 참여 사진 1·2"
+        },
+        {
+          "label": "업무 이해",
+          "value": "IMG04 · IMG05 · IMG06",
+          "detail": "Job Fair 부스·패널 · DCIS 자료"
+        },
+        {
+          "label": "IAP",
+          "value": "IMG08",
+          "detail": "실제 알림 화면은 기능 도식과 같은 장면에서 교체"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "사실과 외부 참고",
+      "body": "선택은 촬영용 추천이며 실제 투표·교육 효과 순위가 아닙니다. 출처와 사실 범위는 노트를 확인합니다.",
+      "items": [
+        {
+          "label": "팀 역할",
+          "value": "7만 명 이상 · 32개 DC",
+          "detail": "100만 코어 이상 · 클라우드 · GPU 기반 인프라"
+        },
+        {
+          "label": "교류 경험",
+          "value": "이관우의 실제 참여",
+          "detail": "다른 부서의 관점 학습. GPU 효율 개선 수치는 미제공"
+        },
+        {
+          "label": "대표 사례",
+          "value": "IAP 로그 알림 자동화",
+          "detail": "지정 형식 메신저 알림 · 해당 수작업 대체"
+        },
+        {
+          "label": "외부 배경",
+          "value": "Microsoft · Alphabet",
+          "detail": "2026년 공식 AI 인프라 투자 자료. URL은 노트·전달 문서"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "제출·촬영 일정",
+      "body": "2026-10-11 기준. 예정 행사의 결과는 확인한 뒤 반영합니다.",
+      "items": [
+        {
+          "label": "10월 12일",
+          "value": "OutSystems 세미나 예정",
+          "detail": "개최 확인 후 상태·자료 갱신"
+        },
+        {
+          "label": "10월 14일",
+          "value": "자료 제출",
+          "detail": "16일 최종 발표 결과를 미리 넣지 않음"
+        },
+        {
+          "label": "10월 16일",
+          "value": "Tech X 최종 발표 예정",
+          "detail": "프로젝트 완료·시상일로 확정된 날짜가 아님"
+        },
+        {
+          "label": "10월 19일",
+          "value": "영상 촬영",
+          "detail": "같은 버전의 대본·PPT·자료 큐 사용"
+        }
+      ]
+    }
+  ]
+}

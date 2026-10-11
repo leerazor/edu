@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "passed_checks": 1928,
+  "errors": [],
+  "metrics": {
+    "iap_seconds": 18,
+    "main_seconds": 275,
+    "whole_seconds": 300,
+    "spoken_syllables": 960,
+    "estimates": {
+      "slow": 271.56,
+      "baseline": 251.7,
+      "fast": 235.0
+    },
+    "measured_scenes": 0,
+    "asset_slots": 2,
+    "selection_status": "촬영용 추천안",
+    "actual_vote": false,
+    "preserved_files": 224
+  },
+  "artifact_sha256": {
+    "content/worldcup-v02-film.json": "dc42dce7a21e614e6c64fa3493a92299f98e10511fb29932eb49310f01c78928",
+    "deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pptx": "89935c0e9cb908d6808998845c473ea3b0181369216a13c1ab28e8ad9979aab4",
+    "deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pdf": "6be4fe2a2fe5836610053df30d379180b30ad6c93c9e34b89cdbc2fd2d21b2a7",
+    "docs/worldcup-v02/01-storyboard.md": "0ca55421cca6843de565e42a8b3fee1320c59525f99b05c83bf0b92dc35fbf05",
+    "docs/worldcup-v02/02-script.md": "9fd4d7db70a3c11b0be92fbda92acf97b3b60a22ae655cc9eef419440d290139",
+    "deliverables/worldcup-v02/teleprompter.txt": "56d8b5c2d4518cb2acad05682226a71976b6f16b67f16a31118227f606ca734d",
+    "deliverables/worldcup-v02/timing-report.json": "bd9fb7c35adc9c4e5a0129d088c7120d29933da1800de9f7970e9ccea0ac1b84",
+    "deliverables/worldcup-v02/choice-states.pptx": "ece876fadf2277d8fa1e34c6ce44cc5fbda4799dab5cd3f6833ef4955301f672",
+    "deliverables/worldcup-v02/choice-states.pdf": "73e869693c6e29b2034c201e5ac4ec8ee435e3ac4ba3cb74aa17f4909ca8dbb8"
+  },
+  "limits": [
+    "Reading estimates are not presenter rehearsal measurements.",
+    "Actual internal photos and company KV will be supplied separately.",
+    "Contact sheets require visual review. Motion is provided as editing instructions.",
+    "Tournament choices are a filming proposal, not actual voting or an education ranking."
+  ]
+}
