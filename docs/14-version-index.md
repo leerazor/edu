@@ -6,6 +6,7 @@
 
 | 버전 | PPT·PDF | 대본·콘티 | 상태 |
 | --- | --- | --- | --- |
+| **공동 해설 editorial-v0.1** | [PPTX](../deliverables/editorial/learning-fair-2026-editorial.pptx) · [PDF](../deliverables/editorial/learning-fair-2026-editorial.pdf) | [대본](editorial/02-script.md) · [콘티](editorial/01-storyboard.md) | 2026-10-11 별도 생성. ‘그 일, 같이 해볼까요?’ / [비판적 검토 기록](editorial/03-editorial-review.md). 실제 낭독·내부 원본 교체 전 |
 | 기존 기본본 v0.1 | [PPTX](../deliverables/learning-fair-2026.pptx) · [PDF](../deliverables/learning-fair-2026.pdf) | [대본](06-script.md) · [콘티](05-storyboard.md) | 2026-10-09 생성된 원본 보존. 후속 서사 검토가 자동 반영된 파일이 아님 |
 | 월드컵 추가본 v0.1 | [PPTX](../deliverables/worldcup/learning-fair-2026-worldcup.pptx) · [PDF](../deliverables/worldcup/learning-fair-2026-worldcup.pdf) | [대본](worldcup/02-script.md) · [콘티](worldcup/01-storyboard.md) | 2026-10-10 제작본 보존. 4강·결승과 Tech X 촬영용 선택안 |
 | 월드컵 v0.2 서사 제안 | 새 PPT 미생성 | [흐름 검토](worldcup/05-storyline-review.md) · [장면·연결 대사 제안](worldcup/06-storyline-revision-proposal.md) | 2026-10-11 검토 문서. 전체 촬영 대본·콘티·발화 검증 완료본이 아님 |
