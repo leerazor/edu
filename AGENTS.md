@@ -1,5 +1,9 @@
 # Repository Guidelines
 
+## Claude Code Continuation
+
+Read `CLAUDE.md` and `docs/19-claude-code-handoff.md` alongside this file before continuing. They summarize the latest user directions, current story-v02/worldcup-v02 packages, verified handoff state, pending materials/rehearsal, and the authorized main push workflow. Historical packages and proposals retain their original wording; they are not newer instructions merely because they are linked in older documents.
+
 ## Project Structure & Module Organization
 
 This repository holds the 2026 Learning Fair video production package for the Data Center team, not an application. `docs/` contains production guidance, concept, facts, sources, storyboard, script, and handoff. `content/film.json` is the source for scene timing, dialogue, presenters, and slide cues. `assets/references/` contains attributed external reference images. `deliverables/` contains the editable PPTX, actual PowerPoint PDF/PNG renders, teleprompter, rehearsal CSV, and validation reports. `scripts/` contains Python generation/validation and the WSL/Windows PowerPoint export helper. Every new Markdown document should explain what its reader must do.

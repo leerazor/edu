@@ -26,7 +26,7 @@
 ## 후속 제작 시 지킬 일
 
 - `content/film.json`과 `content/worldcup-film.json`을 기존 두 제작본의 기준으로 유지한다.
-- 새로운 월드컵 제작본을 구현할 때는 예를 들어 `content/worldcup-v02-film.json`, `docs/worldcup-v02/`, `deliverables/worldcup-v02/`처럼 구분된 경로를 사용한다. 이 경로들은 현재 파일이 있다는 뜻이 아니라 다음 제작본의 권장 저장 위치다.
+- 현재 최신 원본은 `content/story-v02-film.json`과 `content/worldcup-v02-film.json`이며, `docs/`·`deliverables/`의 같은 이름 폴더에 실제 생성본이 있다. 다음 내용 개정은 이 두 제작본까지 보존하고 새로운 버전 경로로 만든다.
 - 기존 빌드 스크립트를 그대로 실행해 보존할 파일을 덮어쓰지 않는다. 새로운 출력 경로와 원본을 먼저 분리한 뒤 생성한다.
 - 같은 자료 번호 P01~P10도 버전마다 내용이 다르므로 PPT·대본·콘티를 서로 섞지 않는다.
 - 스토리라인 제안의 시간 배정표를 실제 발화 검수 결과로 인용하지 않는다. 새 전체 대사와 장표가 만들어진 뒤 별도 검증한다.
