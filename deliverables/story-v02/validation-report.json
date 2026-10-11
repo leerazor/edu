@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "passed_checks": 1471,
+  "passed_checks": 1242,
   "errors": [],
   "metrics": {
     "iap_seconds": 18,
@@ -13,15 +13,14 @@
       "fast": 227.4
     },
     "measured_scenes": 0,
-    "asset_slots": 6,
-    "preserved_files": 224
+    "asset_slots": 6
   },
   "artifact_sha256": {
     "content/story-v02-film.json": "9d660fe632b374f07c3bef1594446e553384808552c47594790813215c8f9bc0",
     "deliverables/story-v02/learning-fair-2026-story-v02.pptx": "48301567eacb46183e43c00f9119324653d514ce09676cc5498b6887317ac252",
     "deliverables/story-v02/learning-fair-2026-story-v02.pdf": "0b49e7c8d0932208c0c0a726ad9f28a0ed531d992a0b8f30dc0b28b61830a1e9",
-    "docs/story-v02/01-storyboard.md": "880a668daf29c993bf6842e40b26379d729ba4b730d1b7110fbe44a453863283",
-    "docs/story-v02/02-script.md": "e0300d5face5edb595923720a23baf40bf2c706568a6e3f888cfc783c92e9360",
+    "docs/story-v02/01-storyboard.md": "2cddd84a988d3d187644f527194a113c6aba27e1d84ff551753bd5bb9aa8403d",
+    "docs/story-v02/02-script.md": "1edfd44d317138d634527c9bc24f1efe5e11ca028f34c70b1b5da6f206e2b1ca",
     "deliverables/story-v02/teleprompter.txt": "4346a0fbd858f2c63d6252a9087d7e11ae41f0d2cf4438873eb24b7ac9eaf979",
     "deliverables/story-v02/timing-report.json": "1ec1477c6374f76914166ff85cc7e7230118dff8835f325c1fbd9332f77a0880"
   },

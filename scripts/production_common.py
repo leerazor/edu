@@ -1,4 +1,7 @@
-"""Build the separate editorial film package from its JSON source."""
+"""Shared timing, production documents, source checks, and text parsers.
+
+This module writes only the paths explicitly passed by the pair builder.
+"""
 
 from __future__ import annotations
 
@@ -6,133 +9,50 @@ import csv
 import hashlib
 import json
 import re
-from pathlib import Path
 
-from pptx import Presentation
-from pptx.enum.text import PP_ALIGN
-from pptx.util import Inches
-
-from build_package import (
-    connector as common_connector,
-    cue_text,
-    measure,
-    name,
-    rgb,
-    text as common_text,
-    timecode,
-)
-
-ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "content/editorial-film.json"
-OUT = ROOT / "deliverables/editorial"
-DOCS = ROOT / "docs/editorial"
-DECK = OUT / "learning-fair-2026-editorial.pptx"
-BG, INK, ACCENT, MUTED, RULE = "FAFAF7", "202522", "176B5B", "626962", "D9DDD7"
-LAYOUTS = {"title", "statement", "facts", "process", "split"}
+def timecode(seconds: int) -> str:
+    return f"{seconds // 60:02d}:{seconds % 60:02d}"
 
 
-def draw_text(slide, value, x, y, w, h, size=24, color=INK, bold=False,
-              align=PP_ALIGN.LEFT):
-    return common_text(slide, str(value), x, y, w, h, size, color, bold, align)
+def spoken(text: str, film: dict) -> str:
+    for word, reading in sorted(film["pronunciations"].items(), key=lambda pair: -len(pair[0])):
+        text = text.replace(word, reading)
+    return text
 
 
-def line(slide, x1, y1, x2, y2, color=RULE, width=1, arrow=False):
-    shape = common_connector(slide, x1, y1, x2, y2, color, width, arrow)
-    for effect in shape._element.xpath('./p:style/a:effectRef'):
-        effect.set('idx', '0')
-    return shape
+def measure(scene: dict, film: dict) -> dict:
+    raw = " ".join(turn["text"] for turn in scene["turns"])
+    read = spoken(raw, film)
+    # Hangul blocks are counted after explicit pronunciation expansion. Punctuation
+    # is handled by the per-scene pause allowance; these are planning estimates.
+    count = len(re.findall(r"[가-힣]", read))
+    assert not re.search(r"[A-Za-z0-9]", read), f"Unmapped pronunciation: {scene['id']}"
+    times = {key: round(count / rate + scene["pause_seconds"], 2)
+             for key, rate in film["reading_rates"].items()}
+    return {
+        "id": scene["id"], "slide": scene["slide"], "raw_characters": len(raw),
+        "spoken_syllables": count, "pause_seconds": scene["pause_seconds"],
+        "allocated_seconds": scene["duration"], "estimates_seconds": times,
+        "baseline_visual_hold_seconds": round(scene["duration"] - times["baseline"], 2),
+    }
 
 
-def base(prs, page, eyebrow, headline, footer="", title=False, statement=False):
-    slide = prs.slides.add_slide(prs.slide_layouts[6])
-    slide.background.fill.solid()
-    slide.background.fill.fore_color.rgb = rgb(BG)
-    draw_text(slide, eyebrow, .75, .62, 11.8, .48, 18, ACCENT, True)
-    draw_text(slide, headline, .75, 2.0 if statement else 1.43, 11.8, 1.9,
-              48 if statement else 44 if title else 40, INK, True)
-    if footer:
-        draw_text(slide, footer, .75, 6.63, 11.8, .33, 12, MUTED)
-    line(slide, .75, 7.02, 12.58, 7.02)
-    draw_text(slide, page, .75, 7.14, .85, .23, 10, ACCENT, True)
-    draw_text(slide, "2026 LEARNING FAIR", 8.2, 7.14, 4.38, .23,
-              10, MUTED, align=PP_ALIGN.RIGHT)
-    return slide
+def name(role: str, film: dict) -> str:
+    return film["presenters"].get(role, role)
 
 
-def draw_rows(slide, items, top=4.68, height=1.82):
-    """Short editorial rows; all words come from the JSON visual object."""
-    count = len(items)
-    if not count:
-        return
-    step = height / count
-    for i, item in enumerate(items):
-        y = top + i * step
-        if i:
-            line(slide, .75, y - .08, 12.58, y - .08)
-        draw_text(slide, item.get("label", ""), .75, y, 2.35, step - .08,
-                  18, ACCENT, True)
-        draw_text(slide, item.get("value", ""), 3.23, y, 4.25, step - .08,
-                  23, INK, True)
-        draw_text(slide, item.get("detail", ""), 7.67, y, 4.91, step - .08,
-                  18, MUTED)
-
-
-def draw_columns(slide, items, layout):
-    count = len(items)
-    if not count:
-        return
-    gap = .45
-    width = (11.83 - gap * (count - 1)) / count
-    for i, item in enumerate(items):
-        x = .75 + i * (width + gap)
-        if i:
-            line(slide, x - gap / 2, 4.24, x - gap / 2, 6.48)
-        draw_text(slide, item.get("label", ""), x, 4.26, width, .5,
-                  18, ACCENT, True)
-        value_size = 54 if layout == "facts" else 30 if layout == "split" else 27
-        draw_text(slide, item.get("value", ""), x, 4.87, width, 1.04,
-                  value_size, INK, True)
-        draw_text(slide, item.get("detail", ""), x, 5.99, width, .54,
-                  20 if count < 4 else 18, MUTED)
-
-
-def draw_visual(prs, page, visual):
-    layout = visual["layout"]
-    assert layout in LAYOUTS, f"{page}: unsupported layout {layout}"
-    items = visual.get("items", [])
-    limit = 2 if layout == "split" else 3 if layout in {"title", "statement"} else 4
-    assert len(items) <= limit, f"{page}: {layout} supports at most {limit} items"
-    assert str(visual["headline"]).count("\n") <= 1, f"{page}: headline exceeds two explicit lines"
-    statement = layout == "statement" and not items
-    slide = base(prs, page, visual.get("eyebrow", ""), visual["headline"],
-                 visual.get("footer", ""), title=layout == "title", statement=statement)
-    body = visual.get("body", "")
-    if layout == "title":
-        draw_text(slide, body, .75, 3.65, 11.8, .94, 29)
-        draw_rows(slide, items, top=4.93, height=1.55)
-    elif layout == "statement":
-        draw_text(slide, body, .75, 4.76 if statement else 3.46, 11.8, 1.02, 28)
-        draw_rows(slide, items)
-    elif layout == "process" and visual.get("flow"):
-        draw_text(slide, body, .75, 3.35, 11.8, .7, 25)
-        for i, item in enumerate(items):
-            x = .75 + i * 4.1
-            draw_text(slide, item.get("label", ""), x, 4.02, 3.55, .5, 18, ACCENT, True)
-            draw_text(slide, item.get("value", ""), x, 4.68, 3.55, .8, 34, INK, True)
-            draw_text(slide, item.get("detail", ""), x, 5.68, 3.55, .65, 20, MUTED)
-            if i + 1 < len(items):
-                line(slide, x + 3.32, 5.03, x + 3.88, 5.03, ACCENT, 1.5, arrow=True)
-    elif layout == "facts" and len(items) == 1:
-        draw_text(slide, body, .75, 3.35, 6.9, 1.1, 27)
-        item = items[0]
-        line(slide, 8.22, 3.55, 8.22, 6.2)
-        draw_text(slide, item.get("label", ""), 8.7, 3.57, 3.88, .5, 18, ACCENT, True)
-        draw_text(slide, item.get("value", ""), 8.63, 4.16, 3.95, 1.6, 78, INK, True)
-        draw_text(slide, item.get("detail", ""), .75, 5.45, 6.9, .9, 24, MUTED)
-    else:
-        draw_text(slide, body, .75, 3.35, 11.8, .7, 25)
-        draw_columns(slide, items, layout)
-    return slide
+def cue_text(turn: dict, scene: dict, film: dict, phonetic: bool = False) -> str:
+    value = turn["text"]
+    cues = [(scene["cue"]["anchor"], f"{scene['slide']} 등장")]
+    cues += [(cue["anchor"], cue["label"]) for cue in scene.get("secondary_cues", [])]
+    for anchor, label in cues:
+        if anchor in value:
+            value = value.replace(anchor, f"[{label}] {anchor}", 1)
+    if not phonetic:
+        return value
+    # Keep production cues unchanged; phonetic expansion applies only to speech.
+    return "".join(piece if piece.startswith("[") else spoken(piece, film)
+                   for piece in re.split(r"(\[[^\]]*\])", value))
 
 
 def add_notes(slide, scene, film):
@@ -155,46 +75,6 @@ def add_notes(slide, scene, film):
     slide.notes_slide.notes_text_frame.text = "\n".join(lines)
 
 
-def draw_appendix(prs, appendix, film):
-    slide = base(prs, appendix["id"], "제작 참고 / 본편 사용 제외", appendix["title"])
-    draw_text(slide, appendix.get("body", ""), .75, 3.27, 11.8, .72, 19)
-    items = appendix.get("items", [])
-    assert len(items) <= 8, f"{appendix['id']}: appendix supports at most eight rows"
-    step = 2.5 / max(len(items), 1)
-    for i, item in enumerate(items):
-        y = 4.14 + i * step
-        if i:
-            line(slide, .75, y - .055, 12.58, y - .055)
-        draw_text(slide, item.get("label", ""), .75, y, 2.04, step - .065,
-                  15 if len(items) < 6 else 13, ACCENT, True)
-        draw_text(slide, item.get("value", ""), 2.96, y, 3.54, step - .065,
-                  17 if len(items) < 6 else 14, INK, True)
-        draw_text(slide, item.get("detail", ""), 6.69, y, 5.89, step - .065,
-                  16 if len(items) < 6 else 13, MUTED)
-    slide._element.set("show", "0")
-    slide.notes_slide.notes_text_frame.text = "\n".join([
-        f"{appendix['id']} / 숨김 제작 부록 / {film['date']}",
-        appendix["title"], appendix.get("body", ""), appendix.get("note", ""),
-        *[" / ".join(str(item.get(key, "")) for key in ["label", "value", "detail"])
-          for item in items],
-        "본편 사용 제외. 검토 PDF·PNG에는 이 숨김 부록도 포함된다.",
-    ])
-    return slide
-
-
-def make_deck(film):
-    prs = Presentation()
-    prs.slide_width, prs.slide_height = Inches(13.333333), Inches(7.5)
-    prs.core_properties.title = f"{film['title']} — {film['subtitle']}"
-    prs.core_properties.author = "Data Center팀"
-    for scene in film["scenes"]:
-        slide = draw_visual(prs, scene["slide"], scene["visual"])
-        add_notes(slide, scene, film)
-    for appendix in film["appendix"]:
-        draw_appendix(prs, appendix, film)
-    return prs
-
-
 def scene_content_hash(scene, film):
     """A measurement belongs to this speech and cue configuration only."""
     payload = {key: scene.get(key) for key in
@@ -209,7 +89,8 @@ def cell(value):
     return str(value).replace("|", "\\|").replace("\n", "<br>")
 
 
-def make_documents(film):
+def make_documents(film, out, docs, source_path):
+    label = "흐름형" if film["variant"] == "story" else "월드컵형"
     rows = [measure(scene, film) for scene in film["scenes"]]
     report = {
         "basis": "Planning estimate, not a rehearsal measurement",
@@ -231,9 +112,9 @@ def make_documents(film):
         if re.search(r"(?<![A-Za-z])IAP(?![A-Za-z])|Infra Agent Platform",
                      " ".join(turn["text"] for turn in scene["turns"]))
     )
-    (OUT / "timing-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (out / "timing-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     heading = f"**{film['version']} · {film['date']}** · {film['title']} — {film['subtitle']}"
-    board = ["# 설명형 영상 콘티", "",
+    board = [f"# 초안 기반 {label} 영상 콘티", "",
              "> 이 문서에서 해야 할 일: 장면별 자료 등장 발화·화면·촬영·홀드를 확인하고, 같은 발화 큐에 맞춰 편집한다.", "", heading, "",
              "전체 300초 = 회사 인트로 5초 + AI 팀 소개 15초 + 스튜디오 본편 275초 + 회사 아웃트로 5초.", "",
              "| 최종 타임코드 | 길이 | 장면 | 자료 | 화면 목적 |", "| --- | ---: | --- | --- | --- |"]
@@ -241,8 +122,8 @@ def make_documents(film):
     for scene in timeline:
         tc = f"{timecode(scene['start'])}–{timecode(scene['start'] + scene['duration'])}"
         board.append(f"| {tc} | {scene['duration']}초 | {scene['id']} | {scene.get('slide', '별도 영상')} | {cell(scene.get('title', scene.get('name', '')))} |")
-    script = ["# 설명형 영상 촬영 대본", "",
-              "> 이 문서에서 해야 할 일: 두 출연자가 발화와 자료 큐를 리허설하고, 장면별 실측을 editorial/rehearsal.csv에 기록한다. 대괄호와 촬영 지시는 읽지 않는다.", "", heading, "",
+    script = [f"# 초안 기반 {label} 영상 촬영 대본", "",
+              f"> 이 문서에서 해야 할 일: 두 출연자가 발화와 자료 큐를 리허설하고, 장면별 실측을 deliverables/{out.name}/rehearsal.csv에 기록한다. 대괄호와 촬영 지시는 읽지 않는다.", "", heading, "",
               "출연: " + " · ".join(name(role, film) for role in film["presenters"] if role != "전체"), "",
               "회사 인트로·AI 팀 소개·아웃트로에는 스튜디오 발화가 없다. 본편은 00:20에 시작한다. 자료 전환·화자 교대·시선·호흡·홀드는 장면 배정 시간에 포함한다.", ""]
     prompt = [f"{film['title']} — {film['subtitle']}", f"{film['version']} / {film['date']}",
@@ -277,18 +158,18 @@ def make_documents(film):
               "현재 내부 행사 사진·화면 원본은 미수급이다. 원본이 없으면 JSON에 정의된 키워드·도식과 스튜디오 화면으로 제작한다. 범용 외부 사진을 실제 사내 시설·행사 증거로 사용하지 않는다. 원본 수집과 사실 확인은 docs/03-facts-and-assets.md를 따른다.", "",
               "PPTX에는 실제 애니메이션이 없다. 자료 전환과 모션은 영상팀 편집 지시이며 각 장면 시간 안에서 구현한다. 숨김 부록 A01~A03은 본편 사용 제외지만 검토 PDF·PNG에는 포함된다.", "",
               "프로그램 사이의 연결은 교육문화의 관점을 설명한다. Job Fair가 Tech X를 발생시켰거나 세미나가 IAP 개발의 직접 원인이었다는 인과를 표현하지 않는다. 10월 세미나 상태는 개최 확인 후 갱신한다.", "",
-              "content/editorial-film.json을 수정한 뒤 이 버전 빌더로 다시 생성한다. 기존 기본안과 월드컵안은 별도 원본·산출물이다.", ""]
+              f"`{source_path}`를 수정한 뒤 `scripts/build_story_pair.py`로 다시 생성한다. story-v02와 worldcup-v02의 원본·산출물을 각각 유지하며, 사용자가 실제 자료를 삽입한 별도 PPTX는 덮어쓰지 않는다. 전달 지시는 `docs/{out.name}/04-handoff.md`를 따른다.", ""]
     board += shared
     rates = " / ".join(f"{key} {value}" for key, value in film["reading_rates"].items())
     script += ["## 발화량과 리허설", "",
                f"총 {report['total_spoken_syllables']}음절. 본편 추정: 느림 {report['main_estimates_seconds']['slow']:.1f}초 / 기준 {report['main_estimates_seconds']['baseline']:.1f}초 / 빠름 {report['main_estimates_seconds']['fast']:.1f}초. 고정 영상 포함 느린 추정 {report['whole_film_estimates_seconds']['slow']:.1f}초.", "",
                f"속도 가정은 초당 음절 수 {rates}다. 영문·숫자를 발음으로 치환하며 화자명·대괄호 큐는 제외한다. 장면별 pause_seconds는 호흡 예산이다. 이 값은 제작 계획 추정이며 실제 리허설 속도나 실측을 대체하지 않는다.", "",
-               "리허설 CSV의 measured_seconds에 장면별 실측을 기록한다. 대사·자료 큐·화자·발음·배정 시간이 같을 때만 이전 실측과 메모를 보존한다. 내용 해시가 바뀌면 해당 실측 칸을 비워 다시 측정한다. IAP는 대표 사례로 35~40초를 유지하고, 초과 시 다른 장면의 중복 설명부터 조정한다.", "",
+               "리허설 CSV의 measured_seconds에 장면별 실측을 기록한다. 대사·자료 큐·화자·발음·배정 시간이 같을 때만 이전 실측과 메모를 보존한다. 내용 해시가 바뀌면 해당 실측 칸을 비워 다시 측정한다. IAP는 20초 이내의 짧은 대표 사례다. 초과하면 기능 해설을 늘리지 않고 중복 문구를 줄인다.", "",
                "10분 촬영 발화 상한은 사용 가능한 한 테이크와 고정 영상 기준이다. NG·준비·추가 테이크의 총 촬영 시간은 별도다.", ""] + shared
-    (DOCS / "01-storyboard.md").write_text("\n".join(board).rstrip() + "\n", encoding="utf-8")
-    (DOCS / "02-script.md").write_text("\n".join(script).rstrip() + "\n", encoding="utf-8")
-    (OUT / "teleprompter.txt").write_text("\n".join(prompt).rstrip() + "\n", encoding="utf-8")
-    rehearsal = OUT / "rehearsal.csv"
+    (docs / "01-storyboard.md").write_text("\n".join(board).rstrip() + "\n", encoding="utf-8")
+    (docs / "02-script.md").write_text("\n".join(script).rstrip() + "\n", encoding="utf-8")
+    (out / "teleprompter.txt").write_text("\n".join(prompt).rstrip() + "\n", encoding="utf-8")
+    rehearsal = out / "rehearsal.csv"
     saved = {}
     if rehearsal.is_file():
         with rehearsal.open(encoding="utf-8-sig", newline="") as handle:
@@ -331,18 +212,23 @@ def check_source(film):
     assert previous == 295
 
 
-def main():
-    film = json.loads(SOURCE.read_text(encoding="utf-8"))
-    check_source(film)
-    prs = make_deck(film)
-    OUT.mkdir(parents=True, exist_ok=True)
-    DOCS.mkdir(parents=True, exist_ok=True)
-    report = make_documents(film)
-    prs.save(DECK)
-    print(json.dumps({"slides": len(prs.slides), "spoken_syllables": report["total_spoken_syllables"],
-                      "main_estimates_seconds": report["main_estimates_seconds"],
-                      "output": str(OUT)}, ensure_ascii=False))
+def compact(value: str) -> str:
+    return re.sub(r"\s+", "", value)
 
 
-if __name__ == "__main__":
-    main()
+def markdown_scene_blocks(value):
+    headings = list(re.finditer(r"(?m)^#{2,3}[^\n]*\b(S\d{2})\b[^\n]*$", value))
+    return {match.group(1): value[match.end():headings[i + 1].start() if i + 1 < len(headings) else len(value)]
+            for i, match in enumerate(headings)}
+
+
+def prompter_scene_blocks(value):
+    headings = list(re.finditer(r"(?m)^\[(S\d{2})\s*/\s*(P\d{2})\s*/[^\n]*\]\s*$", value))
+    return {match.group(1): (match.group(2), value[match.end():headings[i + 1].start() if i + 1 < len(headings) else len(value)])
+            for i, match in enumerate(headings)}
+
+
+def prompter_turns(value):
+    headings = list(re.finditer(r"(?m)^<([^>\n]+)>\s*$", value))
+    return [(match.group(1), value[match.end():headings[i + 1].start() if i + 1 < len(headings) else len(value)].strip())
+            for i, match in enumerate(headings)]

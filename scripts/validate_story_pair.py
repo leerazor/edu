@@ -2,7 +2,7 @@
 
 Run from the repository root after build_story_pair.py and
 render_story_pair_slides.sh. Reports and contact sheets are scoped to these
-versions; earlier production packages are checked for preservation only.
+versions. External reference attribution and asset hashes are checked too.
 """
 
 from __future__ import annotations
@@ -19,14 +19,18 @@ import fitz
 from PIL import Image, ImageChops, ImageDraw, ImageStat
 from pptx import Presentation
 
-from build_editorial_package import scene_content_hash
-from build_package import FONT, cue_text, measure, name, timecode
+from presentation_common import FONT
 from build_story_pair import check_source
-from validate_worldcup_package import (
+from production_common import (
     compact,
+    cue_text,
     markdown_scene_blocks,
+    measure,
+    name,
     prompter_scene_blocks,
     prompter_turns,
+    scene_content_hash,
+    timecode,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -342,13 +346,7 @@ def check_tournament(film, validation):
     validation.metrics["actual_vote"] = False
 
 
-def check_preservation(validation):
-    baseline = json.loads((validation.out / "preservation-baseline.json").read_text(encoding="utf-8"))
-    validation.check(len(baseline["files"]) == 224, "224 historical production files in preservation baseline")
-    for relative, digest in baseline["files"].items():
-        path = ROOT / relative
-        validation.check(path.is_file() and sha256(path) == digest, f"Preserved: {relative}")
-    validation.metrics["preserved_files"] = len(baseline["files"])
+def check_reference_assets(validation):
     manifest = ROOT / "assets/references/manifest.json"
     for entry in json.loads(manifest.read_text(encoding="utf-8")):
         path = ROOT / entry["file"]
@@ -369,7 +367,7 @@ def validate(package):
             validation.section("Deck source synchronization", lambda: check_deck_source(film, deck, validation))
         if package == "worldcup-v02":
             validation.section("Tournament and reveal states", lambda: check_tournament(film, validation))
-    validation.section("Preservation and external assets", lambda: check_preservation(validation))
+    validation.section("Attributed external assets", lambda: check_reference_assets(validation))
     artifacts = [source, validation.out / f"learning-fair-2026-{package}.pptx",
         validation.out / f"learning-fair-2026-{package}.pdf", validation.docs / "01-storyboard.md",
         validation.docs / "02-script.md", validation.out / "teleprompter.txt", validation.out / "timing-report.json"]

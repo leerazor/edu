@@ -2,18 +2,16 @@
 
 from __future__ import annotations
 
-import copy
 import json
-from contextlib import contextmanager
 from pathlib import Path
 
 from pptx import Presentation
 from pptx.enum.text import PP_ALIGN
 from pptx.util import Inches, Pt
 
-import build_package as base_lib
-import build_editorial_package as document_lib
-from build_package import box, connector, measure, text
+import presentation_common as base_lib
+import production_common as document_lib
+from presentation_common import box, connector, text
 
 ROOT = Path(__file__).resolve().parents[1]
 VARIANTS = {"story": "story-v02", "worldcup": "worldcup-v02"}
@@ -41,40 +39,15 @@ def check_source(film):
             tournament["matches"][0]["winner"], tournament["matches"][1]["winner"]}
 
 
-@contextmanager
-def document_paths(key):
-    destinations = {"SOURCE": ROOT / "content" / f"{key}-film.json",
-                    "OUT": ROOT / "deliverables" / key,
-                    "DOCS": ROOT / "docs" / key,
-                    "DECK": ROOT / "deliverables" / key / f"learning-fair-2026-{key}.pptx"}
-    saved = {k: getattr(document_lib, k) for k in destinations}
-    try:
-        for k, value in destinations.items():
-            setattr(document_lib, k, value)
-        yield
-    finally:
-        for k, value in saved.items():
-            setattr(document_lib, k, value)
-
-
 def make_documents(film, key):
-    with document_paths(key):
-        report = document_lib.make_documents(film)
+    out, docs = ROOT / "deliverables" / key, ROOT / "docs" / key
+    report = document_lib.make_documents(film, out, docs, f"content/{key}-film.json")
     report["iap_allocated_seconds"] = next(s["duration"] for s in film["scenes"]
                                            if s["id"] == film["iap_scene"])
-    out, docs = ROOT / "deliverables" / key, ROOT / "docs" / key
     (out / "timing-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    label = "흐름형" if film["variant"] == "story" else "월드컵형"
     for filename in ["01-storyboard.md", "02-script.md"]:
         p = docs / filename
         value = p.read_text()
-        value = value.replace("설명형 영상", f"초안 기반 {label} 영상")
-        value = value.replace("editorial/rehearsal.csv", f"deliverables/{key}/rehearsal.csv")
-        value = value.replace("content/editorial-film.json", f"content/{key}-film.json")
-        value = value.replace("IAP는 대표 사례로 35~40초를 유지하고, 초과 시 다른 장면의 중복 설명부터 조정한다.",
-                              "IAP는 20초 이내의 짧은 대표 사례다. 초과하면 기능 해설을 늘리지 않고 중복 문구를 줄인다.")
-        value = value.replace("기존 기본안과 월드컵안은 별도 원본·산출물이다.",
-                              "이전 기본본·월드컵본·공동 해설 v01–v05는 별도 원본·산출물로 보존한다.")
         for s in film["scenes"]:
             heading = next((line for line in value.splitlines()
                             if line.startswith(("## ", "### ")) and s["id"] in line), None)

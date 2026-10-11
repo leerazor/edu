@@ -1,14 +1,20 @@
 # 월드컵형 자료 삽입과 영상팀 전달
 
-> 이 문서에서 해야 할 일: 아래 월드컵형 PPT·대본·콘티를 같은 묶음으로 사용한다. 실제 자료를 PPTX 사본에 넣고, 발화·자료 큐를 함께 리허설한다. 이전 제작본은 보존한다.
+> 이 문서에서 해야 할 일: 아래 월드컵형 PPT·대본·콘티를 같은 묶음으로 사용한다. 실제 자료를 PPTX 사본에 넣고, 선택 이유·발화·자료 공개 큐를 함께 리허설한다. 공통 작업 지침은 [CLAUDE.md](../../CLAUDE.md)를 따른다.
 
 ## 열어볼 파일
 
 - [편집 PPTX](../../deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pptx) · [실제 PowerPoint PDF](../../deliverables/worldcup-v02/learning-fair-2026-worldcup-v02.pdf)
-- [촬영 대본](02-script.md) · [콘티](01-storyboard.md) · [흐름 검토](03-story-review.md)
+- [촬영 대본](02-script.md) · [콘티](01-storyboard.md)
 - [프롬프터](../../deliverables/worldcup-v02/teleprompter.txt) · [리허설 CSV](../../deliverables/worldcup-v02/rehearsal.csv)
 
 회사 인트로 5초 → 별도 AI 팀 소개 15초 → 본편 275초 → 회사 아웃트로 5초, 총 300초다. PPT 본편은 10장이고 숨김 부록 3장은 영상에 내보내지 않는다. 검토 PDF에는 부록도 들어 있다.
+
+## 흐름과 남는 한계
+
+팀 역할·AI 4 AI 비전·교류 문화를 먼저 설명하고, 같은 기준으로 세 번 선택한다. 첫 경기의 외부 지식·Tech X 비교에 개인 경험을 더한 뒤, 함께 일할 동료의 업무를 이해하는 Job Fair·DCIS로 이어진다. 결승에서는 꾸준한 공유와 공동 경험을 비교하고 작은 과제·타부서 참여라는 시작 방법을 남긴다. 결말은 전체 문화와 커지는 AI 인프라 미션으로 돌아온다.
+
+상호 보완적인 활동을 승자·탈락자로 나누므로 관계 설명과 출연자의 호흡에 더 의존하는 한계가 있다. ‘사실 모두 우승’ 반전을 넣지 않는다. 현재 추천은 흐름형이며 이 안은 비교 대안이다. 실제 출연자의 선택·사진·낭독·회사 KV는 아직 확인 전이다. [검증 보고서](../../deliverables/worldcup-v02/validation-report.json)의 발화 시간은 추정이다.
 
 ## 자료를 붙일 위치
 
@@ -64,4 +70,4 @@ bash scripts/render_story_pair_slides.sh
 .venv/bin/python scripts/validate_story_pair.py
 ```
 
-원본은 `content/worldcup-v02-film.json`이다. 이 명령은 두 새 버전을 함께 생성하며 이전 패키지의 출력 경로를 쓰지 않는다. 내부 사진·회사 KV·실제 낭독은 후속 확인이다.
+원본은 `content/worldcup-v02-film.json`이다. 이 명령은 현재 두 제작본을 함께 생성한다. 내부 사진·회사 KV·실제 낭독은 후속 확인이다. 사용자 자료 삽입본은 별도 사본으로 보관한다.

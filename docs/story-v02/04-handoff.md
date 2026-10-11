@@ -1,14 +1,20 @@
 # 흐름형 자료 삽입과 영상팀 전달
 
-> 이 문서에서 해야 할 일: 아래 흐름형 PPT·대본·콘티를 같은 묶음으로 사용한다. 실제 자료를 PPTX 사본에 넣고, 발화·자료 큐를 함께 리허설한다. 이전 제작본은 보존한다.
+> 이 문서에서 해야 할 일: 아래 흐름형 PPT·대본·콘티를 같은 묶음으로 사용한다. 실제 자료를 PPTX 사본에 넣고, 발화·자료 큐와 장면 연결을 함께 리허설한다. 공통 작업 지침은 [CLAUDE.md](../../CLAUDE.md)를 따른다.
 
 ## 열어볼 파일
 
 - [편집 PPTX](../../deliverables/story-v02/learning-fair-2026-story-v02.pptx) · [실제 PowerPoint PDF](../../deliverables/story-v02/learning-fair-2026-story-v02.pdf)
-- [촬영 대본](02-script.md) · [콘티](01-storyboard.md) · [흐름 검토](03-story-review.md)
+- [촬영 대본](02-script.md) · [콘티](01-storyboard.md)
 - [프롬프터](../../deliverables/story-v02/teleprompter.txt) · [리허설 CSV](../../deliverables/story-v02/rehearsal.csv)
 
 회사 인트로 5초 → 별도 AI 팀 소개 15초 → 본편 275초 → 회사 아웃트로 5초, 총 300초다. PPT 본편은 10장이고 숨김 부록 3장은 영상에 내보내지 않는다. 검토 PDF에는 부록도 들어 있다.
+
+## 흐름과 검토 기준
+
+커지는 AI 인프라 미션 → 구성원의 성장 필요 → 외부 기술·동료 경험·업무 이해의 교류 → 함께 미션을 준비하는 문화로 이어진다. Tech X의 공동 경험 뒤 Job Fair·DCIS로 넘어가는 이유는 함께 일할 동료의 업무도 이해해야 하기 때문이다. 설명 순서이며 세미나가 Tech X를 만들었다는 인과가 아니다. GPU 과제와 IAP는 다른 프로젝트다. 마지막에는 모집·시상 규칙을 반복하지 않고 전체 문화와 AI 4 AI 비전을 회수한다.
+
+현재 두 안 중 추천은 이 흐름형이다. 실제 사진·출연자 낭독·회사 KV 반영이 남아 있다. [검증 보고서](../../deliverables/story-v02/validation-report.json)의 발화 시간은 실측이 아닌 추정이다.
 
 ## 자료를 붙일 위치
 
@@ -50,4 +56,4 @@ bash scripts/render_story_pair_slides.sh
 .venv/bin/python scripts/validate_story_pair.py
 ```
 
-원본은 `content/story-v02-film.json`이다. 이 명령은 두 새 버전을 함께 생성하며 이전 패키지의 출력 경로를 쓰지 않는다. 내부 사진·회사 KV·실제 낭독은 후속 확인이다.
+원본은 `content/story-v02-film.json`이다. 이 명령은 현재 두 제작본을 함께 생성한다. 내부 사진·회사 KV·실제 낭독은 후속 확인이다. 사용자 자료 삽입본은 별도 사본으로 보관한다.

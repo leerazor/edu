@@ -149,4 +149,4 @@ PPTX에는 실제 애니메이션이 없다. 자료 전환과 모션은 영상�
 
 프로그램 사이의 연결은 교육문화의 관점을 설명한다. Job Fair가 Tech X를 발생시켰거나 세미나가 IAP 개발의 직접 원인이었다는 인과를 표현하지 않는다. 10월 세미나 상태는 개최 확인 후 갱신한다.
 
-content/story-v02-film.json을 수정한 뒤 이 버전 빌더로 다시 생성한다. 이전 기본본·월드컵본·공동 해설 v01–v05는 별도 원본·산출물로 보존한다.
+`content/story-v02-film.json`를 수정한 뒤 `scripts/build_story_pair.py`로 다시 생성한다. story-v02와 worldcup-v02의 원본·산출물을 각각 유지하며, 사용자가 실제 자료를 삽입한 별도 PPTX는 덮어쓰지 않는다. 전달 지시는 `docs/story-v02/04-handoff.md`를 따른다.
